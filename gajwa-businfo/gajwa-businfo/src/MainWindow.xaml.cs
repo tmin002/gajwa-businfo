@@ -158,7 +158,7 @@ namespace gajwa_businfo
                     if (bsinfo.bustime.Contains("잠시 후") && !LastBus057time.Contains("잠시 후") && Bus057TermCountThread.Started)
                     {
                         Bus057TermCountThread.StopCount();
-                        Bus057AverageUpdater(Bus057TermCountThread.Count);
+                        Bus057AverageUpdater(Bus057TermCountThread.Count + 60 * 2);
                         d.write($"[057watcher] term counter stopped, term={Bus057TermCountThread.Count + 60*2}sec, saving result.");
                     }
 
@@ -207,7 +207,7 @@ namespace gajwa_businfo
 
                         if (displaylist[0].bustime.Contains("차고")) text_str = "차고지 대기중";
                         if (displaylist[0].bustime.Contains("회차")) text_str = "회차지 대기중";
-                        if (displaylist[0].bustime.Contains("운행정보")) text_str = "운행정보없음";
+                        if (displaylist[0].bustime.Contains("운행")) text_str = "현재 운행안함";
 
                         if (text_str.Length != 0) this.Dispatcher.Invoke(new de(() =>
                         {
@@ -253,7 +253,7 @@ namespace gajwa_businfo
 
                         if (displaylist[1].bustime.Contains("차고")) text_str = "차고지 대기중";
                         if (displaylist[1].bustime.Contains("회차")) text_str = "회차지 대기중";
-                        if (displaylist[1].bustime.Contains("운행정보")) text_str = "운행정보없음";
+                        if (displaylist[1].bustime.Contains("운행")) text_str = "운행정보없음";
 
                         if (text_str.Length != 0) this.Dispatcher.Invoke(new de(() =>
                         {
@@ -299,7 +299,7 @@ namespace gajwa_businfo
 
                         if (displaylist[2].bustime.Contains("차고")) text_str = "차고지 대기중";
                         if (displaylist[2].bustime.Contains("회차")) text_str = "회차지 대기중";
-                        if (displaylist[2].bustime.Contains("운행정보")) text_str = "운행정보없음";
+                        if (displaylist[2].bustime.Contains("운행")) text_str = "운행정보없음";
 
                         if (text_str.Length != 0) this.Dispatcher.Invoke(new de(() =>
                         {
@@ -345,7 +345,7 @@ namespace gajwa_businfo
 
                         if (displaylist[3].bustime.Contains("차고")) text_str = "차고지 대기중";
                         if (displaylist[3].bustime.Contains("회차")) text_str = "회차지 대기중";
-                        if (displaylist[3].bustime.Contains("운행정보")) text_str = "운행정보없음";
+                        if (displaylist[3].bustime.Contains("운행")) text_str = "운행정보없음";
 
                         if (text_str.Length != 0) this.Dispatcher.Invoke(new de(() =>
                         {
@@ -391,7 +391,7 @@ namespace gajwa_businfo
 
                         if (displaylist[4].bustime.Contains("차고")) text_str = "차고지 대기중";
                         if (displaylist[4].bustime.Contains("회차")) text_str = "회차지 대기중";
-                        if (displaylist[4].bustime.Contains("운행정보")) text_str = "운행정보없음";
+                        if (displaylist[4].bustime.Contains("운행")) text_str = "운행정보없음";
 
                         if (text_str.Length != 0) this.Dispatcher.Invoke(new de(() =>
                         {
@@ -437,7 +437,7 @@ namespace gajwa_businfo
 
                         if (displaylist[5].bustime.Contains("차고")) text_str = "차고지 대기중";
                         if (displaylist[5].bustime.Contains("회차")) text_str = "회차지 대기중";
-                        if (displaylist[5].bustime.Contains("운행정보")) text_str = "운행정보없음";
+                        if (displaylist[5].bustime.Contains("운행")) text_str = "운행정보없음";
 
                         if (text_str.Length != 0) this.Dispatcher.Invoke(new de(() =>
                         {
