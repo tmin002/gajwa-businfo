@@ -12,7 +12,7 @@
 
 
 
-        <Canvas Margin="80,210,998,744" x:Name="bus057_normal_state_panel"  >
+        <Canvas Margin="80,210,998,744" x:Name="bus057_normal_state_panel" >
 
             <Border BorderBrush="White" BorderThickness="1" CornerRadius="15" Height="126" Width="690"/>
 
@@ -39,7 +39,7 @@
             <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
                 Source="/gajwa-businfo;component/Resources/baseline_directions_bus_black_48dp.png" Canvas.Left="10" Canvas.Top="19"/>
             <Label Content="학교앞 정류장까지" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="10" Canvas.Top="172"/>
-            <Label Content="2분내지" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" RenderTransformOrigin="0.905,0.468" Background="#00000000" Canvas.Left="10" Canvas.Top="271"/>
+            <Label Content="2분 가량" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" RenderTransformOrigin="0.905,0.468" Background="#00000000" Canvas.Left="10" Canvas.Top="271"/>
             <Label Content="소요 예정" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="259" Canvas.Top="271"/>
 
         </Canvas>

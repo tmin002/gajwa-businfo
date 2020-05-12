@@ -74,7 +74,7 @@ namespace gajwa_businfo
                        timer057.Visibility = Visibility.Collapsed;
                        timercap2.Visibility = Visibility.Collapsed;
 
-                       timercap1.Content = "출발정보 축적중입니다.";
+                       timercap1.Content = "출발정보 수집중";
 
                    }
 

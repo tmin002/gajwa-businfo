@@ -84,6 +84,9 @@ namespace gajwa_businfo_manager
 
         }
 
+
+        private bool activate_called = false;
+        private bool disable_called = false;
         private void waitthread()
         {
             writeToRtbox("waitthread 시작됨\n");
@@ -94,34 +97,39 @@ namespace gajwa_businfo_manager
 
             while (true)
             {
+
+
                 switch (DateTime.Now.DayOfWeek)
                 {
+
+  
 
                     case DayOfWeek.Monday:
                         if (timelist[0].StartHour != -1 &&
                            timelist[0].StartHour*60 + timelist[0].StartMinute <= DateTime.Now.Hour*60 + DateTime.Now.Minute &&
-                           timelist[0].EndHour * 60 + timelist[0].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute )
+                           timelist[0].EndHour * 60 + timelist[0].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[0].EndHour != -1 &&
-                            timelist[0].EndHour == DateTime.Now.Hour &&
-                            timelist[0].EndMinute == DateTime.Now.Minute)
+                        if (timelist[0].StartHour != -1 &&
+                           (timelist[0].StartHour * 60 + timelist[0].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[0].EndHour * 60 + timelist[0].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute ) && !disable_called)
+
                             Stop();
 
-                        Thread.Sleep(1000);
+                            Thread.Sleep(1000);
                         break;
 
                     case DayOfWeek.Tuesday:
                         if (timelist[1].StartHour != -1 &&
                            timelist[1].StartHour * 60 + timelist[1].StartMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute &&
-                           timelist[1].EndHour * 60 + timelist[1].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute)
+                           timelist[1].EndHour * 60 + timelist[1].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[1].EndHour != -1 &&
-                            timelist[1].EndHour == DateTime.Now.Hour &&
-                            timelist[1].EndMinute == DateTime.Now.Minute)
+                        if (timelist[1].StartHour != -1 &&
+                           (timelist[1].StartHour * 60 + timelist[1].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[1].EndHour * 60 + timelist[1].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
                         Thread.Sleep(1000);
@@ -130,13 +138,13 @@ namespace gajwa_businfo_manager
                     case DayOfWeek.Wednesday:
                         if (timelist[2].StartHour != -1 &&
                            timelist[2].StartHour * 60 + timelist[2].StartMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute &&
-                           timelist[2].EndHour * 60 + timelist[2].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute)
+                           timelist[2].EndHour * 60 + timelist[2].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[2].EndHour != -1 &&
-                            timelist[2].EndHour == DateTime.Now.Hour &&
-                            timelist[2].EndMinute == DateTime.Now.Minute)
+                        if (timelist[2].StartHour != -1 &&
+                           (timelist[2].StartHour * 60 + timelist[2].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[2].EndHour * 60 + timelist[2].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
                         Thread.Sleep(1000);
@@ -145,13 +153,13 @@ namespace gajwa_businfo_manager
                     case DayOfWeek.Thursday:
                         if (timelist[3].StartHour != -1 &&
                            timelist[3].StartHour * 60 + timelist[3].StartMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute &&
-                           timelist[3].EndHour * 60 + timelist[3].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute)
+                           timelist[3].EndHour * 60 + timelist[3].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[3].EndHour != -1 &&
-                            timelist[3].EndHour == DateTime.Now.Hour &&
-                            timelist[3].EndMinute == DateTime.Now.Minute)
+                        if (timelist[3].StartHour != -1 &&
+                           (timelist[3].StartHour * 60 + timelist[3].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[3].EndHour * 60 + timelist[3].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
                         Thread.Sleep(1000);
@@ -160,13 +168,13 @@ namespace gajwa_businfo_manager
                     case DayOfWeek.Friday:
                         if (timelist[4].StartHour != -1 &&
                            timelist[4].StartHour * 60 + timelist[4].StartMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute &&
-                           timelist[4].EndHour * 60 + timelist[4].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute)
+                           timelist[4].EndHour * 60 + timelist[4].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[4].EndHour != -1 &&
-                            timelist[4].EndHour == DateTime.Now.Hour &&
-                            timelist[4].EndMinute == DateTime.Now.Minute)
+                        if (timelist[4].StartHour != -1 &&
+                           (timelist[4].StartHour * 60 + timelist[4].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[4].EndHour * 60 + timelist[4].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
                         Thread.Sleep(1000);
@@ -175,13 +183,13 @@ namespace gajwa_businfo_manager
                     case DayOfWeek.Saturday:
                         if (timelist[5].StartHour != -1 &&
                            timelist[5].StartHour * 60 + timelist[5].StartMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute &&
-                           timelist[5].EndHour * 60 + timelist[5].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute)
+                           timelist[5].EndHour * 60 + timelist[5].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[5].EndHour != -1 &&
-                            timelist[5].EndHour == DateTime.Now.Hour &&
-                            timelist[5].EndMinute == DateTime.Now.Minute)
+                        if (timelist[5].StartHour != -1 &&
+                           (timelist[5].StartHour * 60 + timelist[5].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[5].EndHour * 60 + timelist[5].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
                         Thread.Sleep(1000);
@@ -190,13 +198,13 @@ namespace gajwa_businfo_manager
                     case DayOfWeek.Sunday:
                         if (timelist[6].StartHour != -1 &&
                            timelist[6].StartHour * 60 + timelist[6].StartMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute &&
-                           timelist[6].EndHour * 60 + timelist[6].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute)
+                           timelist[6].EndHour * 60 + timelist[6].EndMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute && !activate_called)
 
                             Start();
 
-                        if (timelist[6].EndHour != -1 &&
-                            timelist[6].EndHour == DateTime.Now.Hour &&
-                            timelist[6].EndMinute == DateTime.Now.Minute)
+                        if (timelist[6].StartHour != -1 &&
+                           (timelist[6].StartHour * 60 + timelist[6].StartMinute > DateTime.Now.Hour * 60 + DateTime.Now.Minute ||
+                           timelist[6].EndHour * 60 + timelist[6].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
                         Thread.Sleep(1000);
@@ -214,8 +222,10 @@ namespace gajwa_businfo_manager
         private void Start()
         {
             writeToRtbox("활성화 시간 됨, 프로그램 실행");
-            Process.Start("gajwa-businfo.exe");
-            Thread.Sleep(10 * 6000);
+             Process.Start("gajwa-businfo.exe");
+            activate_called = true;
+            disable_called = false;
+
         }
 
         private void Stop()
@@ -226,11 +236,13 @@ namespace gajwa_businfo_manager
             Process[] hs = Process.GetProcessesByName("geckodriver");
             Process[] fs = Process.GetProcessesByName("firefox");
 
-            foreach (Process i in gs) i.Kill();
-            foreach (Process i in hs) i.Kill();
-            foreach (Process i in fs) i.Kill();
+             foreach (Process i in gs) i.Kill();
+             foreach (Process i in hs) i.Kill();
+              foreach (Process i in fs) i.Kill();
 
-            Thread.Sleep(10 * 6000);
+            disable_called = true;
+            activate_called = false;
+
         }
 
         private void writeToRtbox(string text)
