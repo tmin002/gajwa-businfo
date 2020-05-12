@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="gajwa_businfo_manager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="monday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3:50-5:00</Value>
+    </Setting>
+    <Setting Name="tuesday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4:50-6:00</Value>
+    </Setting>
+    <Setting Name="wednesday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3:50-5:00</Value>
+    </Setting>
+    <Setting Name="thursday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4:50-6:00</Value>
+    </Setting>
+    <Setting Name="friday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3:50-5:00</Value>
+    </Setting>
+    <Setting Name="saturday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="sunday_str" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

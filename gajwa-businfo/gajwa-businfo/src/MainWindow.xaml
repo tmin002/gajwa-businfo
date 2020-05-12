@@ -1,0 +1,111 @@
+﻿<Window x:Class="gajwa_businfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gajwa_businfo"
+        mc:Ignorable="d"
+        Title="가좌고등학교 버스정보안내시스템" Height="1080" Width="1920"
+        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Topmost="False">
+    <Grid Background="Black" Margin="0,0,0,0">
+
+
+
+
+        <Canvas Margin="80,210,998,744" x:Name="bus057_normal_state_panel"  >
+
+            <Border BorderBrush="White" BorderThickness="1" CornerRadius="15" Height="126" Width="690"/>
+
+            <Label Content="차고지 대기중" HorizontalAlignment="Left" Foreground="#FF729DD2" 
+                VerticalAlignment="Top" FontSize="60" Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="255" Canvas.Top="19"/>
+            <Label Content="057" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60" FontWeight="Bold" Height="94" Canvas.Left="103" Canvas.Top="19"/>
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="10" Canvas.Top="19"/>
+            <Label x:Name="timercap1" Content="마지막 출발로부터" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="15" Canvas.Top="184"/>
+            <Label x:Name="timer057" Content="00:00" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="21" Canvas.Top="278"/>
+            <Label Content="하교시간대" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="15" Canvas.Top="418"/>
+            <Label Content="평균배차간격" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="15" Canvas.Top="516"/>
+            <Label x:Name="timercap2" Content="경과" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="191" Canvas.Top="278"/>
+            <Label x:Name="avg057" Content="약 00:00" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" RenderTransformOrigin="0.905,0.468" Background="#00000000" Canvas.Left="15" Canvas.Top="624"/>
+
+        </Canvas>
+
+        <Canvas Margin="80,210,998,744" x:Name="bus057_active_state_panel" >
+
+            <Border BorderBrush="#e1a217" Background="#e1a217" BorderThickness="1" CornerRadius="15" Height="126" Width="690"/>
+            <Label Content="잠시후 도착" HorizontalAlignment="Left" Foreground="Red" 
+                                VerticalAlignment="Top" FontSize="60" Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="255" Canvas.Top="19"/>
+            <Label Content="057" HorizontalAlignment="Left" Foreground="Black"  VerticalAlignment="Top" FontSize="60" FontWeight="Bold" Height="94" Canvas.Left="103" Canvas.Top="19"/>
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_black_48dp.png" Canvas.Left="10" Canvas.Top="19"/>
+            <Label Content="학교앞 정류장까지" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="10" Canvas.Top="172"/>
+            <Label Content="2분내지" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" RenderTransformOrigin="0.905,0.468" Background="#00000000" Canvas.Left="10" Canvas.Top="271"/>
+            <Label Content="소요 예정" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" FontWeight="Bold" Canvas.Left="259" Canvas.Top="271"/>
+
+        </Canvas>
+        <Image HorizontalAlignment="Left" Height="68" Margin="18,16,0,0" VerticalAlignment="Top" Width="68" 
+               Source="/gajwa-businfo;component/Resources/logo.png"/>
+        <Label Content="가좌고등학교 버스정보안내 시스템                " HorizontalAlignment="Left" Margin="109,20,0,0" Foreground="White"  VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Height="64"/>
+
+
+        <Canvas x:Name="bus1" Margin="0,-14,0,14">
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="1198" Canvas.Top="134"/>
+            <Label x:Name="busname1" Content="000" HorizontalAlignment="Left" Foreground="White"   VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" Canvas.Left="1303" Canvas.Top="134"/>
+            <Label x:Name="status1" Content="0전" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1564" Canvas.Top="134"/>
+            <Label x:Name="time1" Content="0분" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="7.688,1.553" Canvas.Left="1718" Canvas.Top="134"/>
+            <Line X1="1200" Y1="250" X2="1920" Y2="250" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" />
+            <Label x:Name="text1" Content="차고지 대기중" Visibility="Hidden" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1499" Canvas.Top="134"/>
+
+        </Canvas>
+        <Canvas x:Name="bus2" Margin="0,130,0,14">
+            <Line X1="1200" Y1="250" X2="1920" Y2="250" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" />
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="1198" Canvas.Top="134"/>
+            <Label x:Name="busname2" Content="000" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" Canvas.Left="1303" Canvas.Top="134"/>
+            <Label x:Name="status2" Content="0전" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1563" Canvas.Top="134"/>
+            <Label x:Name="time2" Content="0분" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" Canvas.Left="1715" Canvas.Top="134"/>
+            <Label x:Name="text2" Content="차고지 대기중" Visibility="Hidden" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1499" Canvas.Top="134"/>
+        </Canvas>
+        <Canvas x:Name="bus3" Margin="0,274,0,14">
+            <Line X1="1200" Y1="250" X2="1920" Y2="250" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" />
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="1198" Canvas.Top="134"/>
+            <Label x:Name="busname3" Content="000" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" Canvas.Left="1303" Canvas.Top="134"/>
+            <Label x:Name="status3" Content="0전" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1563" Canvas.Top="134"/>
+            <Label x:Name="time3" Content="0분" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" Canvas.Left="1715" Canvas.Top="134"/>
+            <Label x:Name="text3" Content="차고지 대기중" Visibility="Hidden" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1499" Canvas.Top="134"/>
+        </Canvas>
+        <Canvas x:Name="bus4" Margin="0,418,0,14">
+            <Line X1="1200" Y1="250" X2="1920" Y2="250" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" />
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="1198" Canvas.Top="134"/>
+            <Label x:Name="busname4" Content="000" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" Canvas.Left="1303" Canvas.Top="134"/>
+            <Label x:Name="status4" Content="0전" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1563" Canvas.Top="134"/>
+            <Label x:Name="time4" Content="0분" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" Canvas.Left="1715" Canvas.Top="134"/>
+            <Label x:Name="text4" Content="차고지 대기중" Visibility="Hidden" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1499" Canvas.Top="134"/>
+        </Canvas>
+        <Canvas x:Name="bus5" Margin="0,562,0,14">
+            <Line X1="1200" Y1="250" X2="1920" Y2="250" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" />
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="1198" Canvas.Top="134"/>
+            <Label x:Name="busname5" Content="000" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" Canvas.Left="1303" Canvas.Top="134"/>
+            <Label x:Name="status5" Content="0전" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1563" Canvas.Top="134"/>
+            <Label x:Name="time5" Content="0분" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" Canvas.Left="1715" Canvas.Top="134"/>
+            <Label x:Name="text5" Content="차고지 대기중" Visibility="Hidden" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1499" Canvas.Top="134"/>
+        </Canvas>
+        <Canvas x:Name="bus6" Margin="0,706,0,14">
+            <Line X1="1200" Y1="250" X2="1920" Y2="250" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" />
+            <Image HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="88" 
+                Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" Canvas.Left="1198" Canvas.Top="134"/>
+            <Label x:Name="busname6" Content="000" HorizontalAlignment="Left" Foreground="White"  VerticalAlignment="Top" FontSize="60                " FontWeight="Bold" Height="94" Canvas.Left="1303" Canvas.Top="134"/>
+            <Label x:Name="status6" Content="0전" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1563" Canvas.Top="134"/>
+            <Label x:Name="time6" Content="0분" HorizontalAlignment="Left" Foreground="#FF729DD2"  VerticalAlignment="Top" FontSize="60                " Height="94" Canvas.Left="1715" Canvas.Top="134"/>
+            <Label x:Name="text6" Content="차고지 대기중" Visibility="Hidden" HorizontalAlignment="Left" Foreground="#FFD27575"  VerticalAlignment="Top" FontSize="60                " Height="94" RenderTransformOrigin="0.905,0.468" Canvas.Left="1499" Canvas.Top="134"/>
+        </Canvas>
+
+        <Line x:Name="titleline" X1="0" Y1="100" X2="1920" Y2="100" Stroke="White" StrokeThickness="1" Margin="-2,-7,2,7" />
+
+
+    </Grid>
+</Window>
