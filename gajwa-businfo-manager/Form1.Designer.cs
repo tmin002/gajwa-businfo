@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -94,9 +93,11 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(20, 186);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(400, 238);
+            this.label10.Size = new System.Drawing.Size(394, 187);
             this.label10.TabIndex = 22;
-            this.label10.Text = resources.GetString("label10.Text");
+            this.label10.Text = "\'시작\' 버튼을 누르면 활성화 시간대가 아니면 자동으로\r\n모니터와의 연결을 끊게되고, 활성화 시간에\r\n맞춰 자동으로 모니터와의 연결이 재개되며\r\n" +
+    "프로그램이 실행됩니다.\r\n\r\n\'설정 저장\' 버튼을 누르면 각 텍스트 상자에 입력한 시간 값들이\r\n영구적으로 프로그램 내부에 저장되어 다음에 값을" +
+    " 입력할 필요가\r\n없게 됩니다.\r\n\r\n\r\n\r\n";
             // 
             // groupBox1
             // 
@@ -261,7 +262,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 9);
+            this.panel1.Location = new System.Drawing.Point(2, 9);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(843, 415);
             this.panel1.TabIndex = 24;
@@ -269,7 +270,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(11, 21);
+            this.richTextBox1.Location = new System.Drawing.Point(15, 20);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(818, 382);
@@ -286,7 +287,7 @@
             this.label11.Size = new System.Drawing.Size(497, 68);
             this.label11.TabIndex = 25;
             this.label11.Text = "주의: gajwa-businfo.exe, buslist.txt, 057-average.txt가 프로그램과 같은\r\n폴더에 있어야 합니다. 자세한 내" +
-    "용은 README.txt 참고\r\n\r\n주의: 시작 시간과 종료 시간을 1분 이하로 두지 마세요. 오류가 발생할 수도 있어요";
+    "용은 README.txt 참고\r\n\r\n주의: 시작 시간과 종료 시간을 1분 이내로 두지 마세요. 오류가 발생할 수도 있어요";
             // 
             // Form1
             // 

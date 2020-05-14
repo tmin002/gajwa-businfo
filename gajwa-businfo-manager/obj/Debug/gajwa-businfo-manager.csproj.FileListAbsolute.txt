@@ -31,9 +31,9 @@ C:\Users\team9\Desktop\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gaj
 C:\Users\team9\Desktop\project\gajwa-businfo-project\excutables\gajwa-businfo-manager.exe.config
 C:\Users\team9\Desktop\project\gajwa-businfo-project\excutables\gajwa-businfo-manager.exe
 C:\Users\team9\Desktop\project\gajwa-businfo-project\excutables\gajwa-businfo-manager.pdb
-C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa-businfo-manager.csprojResolveAssemblyReference.cache
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa_businfo_manager.Form1.resources
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa_businfo_manager.Properties.Resources.resources
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa-businfo-manager.csproj.GenerateResource.Cache
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa-businfo-manager.exe
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa-businfo-manager.pdb
+C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo-manager\obj\Debug\gajwa-businfo-manager.csprojAssemblyReference.cache

@@ -117,21 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label10.Text" xml:space="preserve">
-    <value>'시작' 버튼을 누르면 활성화 시간대가 아니면 자동으로
-모니터와의 연결을 끊게되고, 활성화 시간에
-맞춰 자동으로 모니터와의 연결이 재개되며
-프로그램이 실행됩니다.
-
-'설정 저장' 버튼을 누르면 각 텍스트 상자에 입력한 시간 값들이
-영구적으로 프로그램 내부에 저장되어 다음에 값을 입력할 필요가
-없게 됩니다.
-
-활성화 시간대가 아닌 상태에서 컴퓨터를 설정하려면
-컴퓨터를 강제종료한 후 다시 부팅해야 하며, '시작' 버튼을 누른 뒤
-자동시작 기능을 완벽하게 끄고 싶다면 작업 관리자에서
-이 프로그램 파일 의 이름을 찾은 뒤 직접 종료해야 합니다.
-
-</value>
-  </data>
 </root>
