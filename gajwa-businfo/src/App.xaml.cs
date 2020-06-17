@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
+using System.Diagnostics;
 using System.Windows;
 using System.Threading;
 using System.IO;
@@ -37,14 +38,7 @@ namespace gajwa_businfo
 
             //여기는 buslist.txt 불러오는 곳
 
-            string rawBusList = File.ReadAllText(base_.PWD + "/buslist.txt").Replace(",","\n");
-            StringReader reader = new StringReader(rawBusList);
 
-            while (reader.Peek() >= 0)
-            {
-                string rawline = reader.ReadLine();
-                base_.BUS_SHOW_LIST.Add(rawline);
-            }
             
             
 
@@ -52,7 +46,10 @@ namespace gajwa_businfo
 
         private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
+
             MessageBox.Show(e.Exception.ToString());
+            Process.Start("errshow.exe",e.Exception.ToString());
+            
             //Form1 a = new Form1();
             //a.ShowDialog();
         }

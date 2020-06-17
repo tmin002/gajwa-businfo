@@ -117,7 +117,7 @@ namespace gajwa_businfo_manager
 
                             Stop();
 
-                            Thread.Sleep(1000);
+                            Thread.Sleep(1000/1000);
                         break;
 
                     case DayOfWeek.Tuesday:
@@ -132,7 +132,7 @@ namespace gajwa_businfo_manager
                            timelist[1].EndHour * 60 + timelist[1].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1000/1000);
                         break;
 
                     case DayOfWeek.Wednesday:
@@ -147,7 +147,7 @@ namespace gajwa_businfo_manager
                            timelist[2].EndHour * 60 + timelist[2].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1000/1000);
                         break;
 
                     case DayOfWeek.Thursday:
@@ -162,7 +162,7 @@ namespace gajwa_businfo_manager
                            timelist[3].EndHour * 60 + timelist[3].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1000/1000);
                         break;
 
                     case DayOfWeek.Friday:
@@ -177,7 +177,7 @@ namespace gajwa_businfo_manager
                            timelist[4].EndHour * 60 + timelist[4].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1000/1000);
                         break;
 
                     case DayOfWeek.Saturday:
@@ -192,7 +192,7 @@ namespace gajwa_businfo_manager
                            timelist[5].EndHour * 60 + timelist[5].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1000/1000);
                         break;
 
                     case DayOfWeek.Sunday:
@@ -207,7 +207,7 @@ namespace gajwa_businfo_manager
                            timelist[6].EndHour * 60 + timelist[6].EndMinute <= DateTime.Now.Hour * 60 + DateTime.Now.Minute )&& !disable_called)
                             Stop();
 
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1000/1000);
                         break;
 
 

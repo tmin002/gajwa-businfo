@@ -60,3 +60,10 @@ C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo\obj\Debug\gaj
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo\obj\Debug\gajwa_businfo.Properties.Resources.resources
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo\obj\Debug\gajwa-businfo.csproj.GenerateResource.cache
 C:\Users\team9\Desktop\project\gajwa-businfo-project\gajwa-businfo\obj\Debug\gajwa-businfo.csproj.CopyComplete
+C:\Users\team9\Desktop\project\gajwa-businfo\excutables\gajwa-businfo.exe
+C:\Users\team9\Desktop\project\gajwa-businfo\excutables\gajwa-businfo.pdb
+C:\Users\team9\Desktop\project\gajwa-businfo\executables\gajwa-businfo.exe
+C:\Users\team9\Desktop\project\gajwa-businfo\executables\gajwa-businfo.pdb
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\BusListPanel.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\BusListPanel.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\GeneratedInternalTypeHelper.g.cs

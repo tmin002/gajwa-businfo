@@ -17,11 +17,12 @@ namespace gajwa_businfo
         public string busstatus = "";
 
 
-        public BusInfo(string name, string time, string status)
+        public BusInfo(string name, string time, string status) //얘는 그냥 컨테이너 역할.
         {
             busname = name;
             bustime = time;
             busstatus = status;
+
         }
 
         public static BusInfo FindByBusName(string name)
@@ -39,7 +40,9 @@ namespace gajwa_businfo
         public static List<BusInfo> BusInfoList = new List<BusInfo>();
         public static string websiteURL =
         "http://m.gbis.go.kr/search/StationArrivalViaList.do?stationId=219001119";
-        private static IWebDriver driver = new FirefoxDriver();
+
+        private static IWebDriver driver;
+        private static bool FirstLaunch = true;
 
         public static void UpdateBusInfoList()
         {
@@ -48,6 +51,16 @@ namespace gajwa_businfo
             List<string> bustime = new List<string>(); //n분, 빈칸이면 차고지 or 정보없음
             List<string> busstatus = new List<string>(); //n번째 정류소 전 or 차고지대기 or 정보없음
 
+            if (FirstLaunch)
+            {
+                var f = new FirefoxOptions();
+                f.AddArgument("-headless");
+                var s = FirefoxDriverService.CreateDefaultService();
+                s.HideCommandPromptWindow = true;
+
+                driver = new FirefoxDriver(s, f);
+                FirstLaunch = false;
+            }
 
             BusInfoList = new List<BusInfo>();
             driver.Url = websiteURL;
@@ -86,11 +99,12 @@ namespace gajwa_businfo
             for (int i = 0; i < busname.Count; i++)
             {
 
-               BusInfoList.Add(new BusInfo(busname[i], bustime[i], busstatus[i]));
+                BusInfoList.Add(new BusInfo(busname[i], bustime[i], busstatus[i]));
+                //BusInfoList.Add(new BusInfo("055", "잠시후 도착", "3전"));
             }
 
-           // BusInfo.PrintBusInfoList();
-
+            // BusInfo.PrintBusInfoList();
+            //driver.Quit();
 
         }
 

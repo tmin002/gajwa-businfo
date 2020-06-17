@@ -1,0 +1,26 @@
+﻿<Window x:Class="errshow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:errshow"
+        mc:Ignorable="d"
+        Title="가좌고등학교 버스정보안내시스템" Height="1080" Width="1920"
+        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Topmost="False">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="49*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Line  X1="300" Y1="400" X2="1620" Y2="400" Stroke="White" StrokeThickness="1" Margin="-2,-129,2,129" Grid.ColumnSpan="2" />
+
+        <Image HorizontalAlignment="Left" Height="126" Margin="307,138,0,0" VerticalAlignment="Top" Width="104" 
+            Source="Resources/baseline_warning_white_48dp.png" Grid.ColumnSpan="2"/>
+        <Label x:Name="lab" Content="서비스 점검중입니다." HorizontalAlignment="Left" Margin="92,144,0,0" Foreground="White"  VerticalAlignment="Top" FontSize="60" FontWeight="Bold" Height="130" Width="1397" Grid.Column="1"/>
+        <Label x:Name="tt" Content="" HorizontalAlignment="Left" Margin="307,311,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" Height="737" Width="1312" Grid.ColumnSpan="2" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>
