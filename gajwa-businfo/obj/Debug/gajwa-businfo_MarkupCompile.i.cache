@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\src\App.xaml
-21820817701
+6-2523360
 
-11-506741474
+151801055143
 15696029392
-src\BusListPanel.xaml;src\MainWindow.xaml;
+src\Panels\Bus057PanelActiveState.xaml;src\Panels\Bus057PanelNormalState.xaml;src\Panels\BusListPanel.xaml;src\Panels\CampaignPanel.xaml;src\Window\BusInfoPage.xaml;src\Window\MainWindow.xaml;
 
-True
+False
 

@@ -4,13 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:gajwa_businfo"
-             mc:Ignorable="d" Height="180" Background="Black" Width="900">
+             mc:Ignorable="d" Height="180" Background="#0F0F0F" Width="900">
     <Grid HorizontalAlignment="Left" Width="900">
-        <Line X1="0" Y1="0" X2="1920" Y2="0" Stroke="White" StrokeThickness="1"/>
+
+        <Line X1="0" Y1="0" X2="1920" Y2="0" Stroke="White" StrokeThickness="2" Grid.ColumnSpan="2"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="10,40,0,0" VerticalAlignment="Top" Width="100" Source="/gajwa-businfo;component/Resources/baseline_directions_bus_white_48dp.png" RenderTransformOrigin="0.589,0.222"/>
         <Label x:Name="BusName" Content="057" HorizontalAlignment="Left" Margin="138,19,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="86" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
-        <Label x:Name="BusTime" Content="잠시후" HorizontalAlignment="Left" Margin="594,26,0,0" VerticalAlignment="Top" Foreground="#81D4FA" FontSize="80" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Regular"/>
-        <Label x:Name="BusStation" Content="0전" HorizontalAlignment="Left" Margin="383,26,0,0" VerticalAlignment="Top" Foreground="#81D4FA" FontSize="80" RenderTransformOrigin="0.309,0.74" Height="121" Background="Black" FontFamily="Noto Sans Korean Regular"/>
+        <Label x:Name="BusTime" Content="잠시후" HorizontalAlignment="Left" Margin="608,26,0,0" VerticalAlignment="Top" Foreground="#81D4FA" FontSize="80" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Regular"/>
+        <Label x:Name="BusStation" Content="0전" HorizontalAlignment="Left" Margin="383,26,0,0" VerticalAlignment="Top" Foreground="#81D4FA" FontSize="80" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Regular"/>
 
     </Grid>
 </UserControl>

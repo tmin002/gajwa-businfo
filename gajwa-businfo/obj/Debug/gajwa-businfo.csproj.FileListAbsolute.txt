@@ -1,5 +1,4 @@
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\gajwa-businfo.csprojAssemblyReference.cache
-C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\MainWindow.g.cs
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\App.g.cs
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\gajwa-businfo_MarkupCompile.cache
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\gajwa-businfo_MarkupCompile.lref
@@ -7,7 +6,6 @@ C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\bin\Debug\gajwa-busin
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\bin\Debug\gajwa-businfo.pdb
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\bin\Debug\WebDriver.dll
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\bin\Debug\WebDriver.xml
-C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\MainWindow.baml
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\gajwa-businfo.g.resources
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\gajwa_businfo.Properties.Resources.resources
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\gajwa-businfo.csproj.GenerateResource.cache
@@ -64,6 +62,16 @@ C:\Users\team9\Desktop\project\gajwa-businfo\excutables\gajwa-businfo.exe
 C:\Users\team9\Desktop\project\gajwa-businfo\excutables\gajwa-businfo.pdb
 C:\Users\team9\Desktop\project\gajwa-businfo\executables\gajwa-businfo.exe
 C:\Users\team9\Desktop\project\gajwa-businfo\executables\gajwa-businfo.pdb
-C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\BusListPanel.g.cs
-C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\BusListPanel.baml
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\Bus057PanelActiveState.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\Bus057PanelNormalState.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\BusListPanel.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\CampaignPanel.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\BusInfoPage.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\MainWindow.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\Bus057PanelActiveState.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\Bus057PanelNormalState.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\BusListPanel.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\CampaignPanel.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\BusInfoPage.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\MainWindow.baml

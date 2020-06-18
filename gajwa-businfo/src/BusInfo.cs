@@ -44,7 +44,7 @@ namespace gajwa_businfo
         private static IWebDriver driver;
         private static bool FirstLaunch = true;
 
-        public static void UpdateBusInfoList()
+        public static void UpdateBusInfoList(bool Do057only = false)
         {
            
             List<string> busname = new List<string>(); //n번
