@@ -29,6 +29,7 @@ namespace gajwa_businfo
         {
             foreach (BusInfo i in BusInfoList)
             {
+
                 if (i.busname == name) return i;
             }
 
@@ -43,6 +44,12 @@ namespace gajwa_businfo
 
         private static IWebDriver driver;
         private static bool FirstLaunch = true;
+
+        public static void CloseDriver()
+        {
+            driver.Quit();
+            FirstLaunch = true;
+        }
 
         public static void UpdateBusInfoList(bool Do057only = false)
         {

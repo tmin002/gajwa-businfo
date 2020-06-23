@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\obj\Debug\
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\
 gajwa_businfo
 none
 false
 DEBUG;TRACE
-C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\src\App.xaml
-6-2523360
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\src\App.xaml
+8-358379885
 
-151801055143
-15696029392
-src\Panels\Bus057PanelActiveState.xaml;src\Panels\Bus057PanelNormalState.xaml;src\Panels\BusListPanel.xaml;src\Panels\CampaignPanel.xaml;src\Window\BusInfoPage.xaml;src\Window\MainWindow.xaml;
+17-1096995168
+15-2045164814
+src\Panels\Bus057PanelActiveState.xaml;src\Panels\Bus057PanelNormalState.xaml;src\Panels\BusListPanel.xaml;src\Panels\CampaignPanel.xaml;src\Window\BusInfoPage.xaml;src\Window\ClockPage.xaml;src\Window\FoodInfoPage.xaml;src\Window\MainWindow.xaml;
 
-False
+True
 

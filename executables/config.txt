@@ -1,0 +1,7 @@
+[057average]
+057count=0
+057termaverage=0
+
+[buslist]
+buslist=062,063,059,071
+

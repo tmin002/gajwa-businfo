@@ -19,12 +19,15 @@ namespace gajwa_businfo
 
         public static int BUS057_AVERAGE_TERM_SECONDS = 0;
         public static int BUS_UPDATE_TERM = 5000; //단위는 밀리세컨드
+        public static int BUS_FIRST_START_WAIT_TIME = 3000;
 
         public static string PWD = Directory.GetCurrentDirectory();
         public static string BUS057_AVERAGE_FILE_NAME = PWD + "/057-average.txt";
         public static string BUS_SHOW_LIST_FILE_NAME = PWD + "/buslist.txt";
 
         public static List<string> BUS_SHOW_LIST = new List<string>();
+
+        public static string FOODINFO_TMP_FILE = PWD + "/foodinfo_tmp_file";
 
 
         public static void Update057Average(Single elapsed_secs, bool updateOnly = false)

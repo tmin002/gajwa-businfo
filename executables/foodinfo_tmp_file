@@ -1,0 +1,22 @@
+<br>
+<br>
+<center>
+<h2>
+The request / response that are contrary to the Web firewall security policies have been blocked.
+</h2>
+<table>
+<tr>
+<td>Detect time</td>
+<td>2020-06-23 23:24:02</td>
+</tr>
+<tr>
+<td>Detect client IP</td>
+<td>61.80.11.251</td>
+</tr>
+<tr>
+<td>Detect URL</td>
+<td>http://gajwa-h.hs.kr/_File/up_file/gajwa-h.hs.kr/meal/YYYY0623_2.jpg</td>
+</tr>
+</table>
+</center>
+<br>

@@ -28,7 +28,10 @@ namespace gajwa_businfo
             this.Top = 0; this.Left = 0;
             //todo: 스케줄에 따라 자동으로 페이지 보여지게 만들기
 
-            BusInfoPage a = new BusInfoPage();
+           // BusInfoPage a = new BusInfoPage();
+            //this.Content = a;
+            //ClockPage b = new ClockPage();
+            FoodInfoPage a = new FoodInfoPage();
             this.Content = a;
             
 

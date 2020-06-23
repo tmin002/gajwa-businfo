@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:gajwa_businfo"
         xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo.src" x:Class="gajwa_businfo.BusInfoPage"
         mc:Ignorable="d"
-        Title="가좌고등학교 버스정보안내시스템" Height="1080" Width="1920">
+        Title="가좌고등학교 통합정보안내시스템" Height="1080" Width="1920">
 
     <Grid Background="#FF0F0F0F" Margin="0,0,0,0" x:Name="MainGrid" Cursor="None">
         <Line X1="1020" Y1="60" X2="1920" Y2="60" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" x:Name="TopLine"/>
@@ -21,9 +21,9 @@
 
 
 
-        <Label Content="마지막 출발로부터" HorizontalAlignment="Left" Margin="78,290,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
-        <Label x:Name="LastArrivalSec" Content="3:34" HorizontalAlignment="Left" Margin="78,411,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
-        <Label Content="경과" HorizontalAlignment="Left" Margin="272,411,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
+        <Label x:Name="LastArrivalSec1" Content="마지막 출발로부터" HorizontalAlignment="Left" Margin="78,290,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
+        <Label x:Name="LastArrivalSec" Content="00:00" HorizontalAlignment="Left" Margin="78,411,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
+        <Label x:Name="LastArrivalSec2" Content="경과" HorizontalAlignment="Left" Margin="294,411,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
         <Label Content="평균배차간격" HorizontalAlignment="Left" Margin="78,559,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
         <Label x:Name="Average057Term" Content="약 5.7분" HorizontalAlignment="Left" Margin="78,680,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
         <src1:CampaignPanel HorizontalAlignment="Left" Height="150" Margin="0,930,0,0" VerticalAlignment="Top" Width="1920"/>

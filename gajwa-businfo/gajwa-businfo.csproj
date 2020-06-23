@@ -83,6 +83,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="src\Window\ClockPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\Window\FoodInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\Window\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -114,6 +122,12 @@
     <Compile Include="src\Debug.cs" />
     <Compile Include="src\Window\BusInfoPage.xaml.cs">
       <DependentUpon>BusInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\Window\ClockPage.xaml.cs">
+      <DependentUpon>ClockPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\Window\FoodInfoPage.xaml.cs">
+      <DependentUpon>FoodInfoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\Window\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -157,6 +171,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\baseline_info_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\baseline_notifications_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\baseline_schedule_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\notification-red-custom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\baseline_image_not_supported_white_48dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets')" />
