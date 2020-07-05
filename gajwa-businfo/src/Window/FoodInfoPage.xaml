@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:gajwa_businfo"
-      xmlns:src="clr-namespace:gajwa_businfo.src" x:Class="gajwa_businfo.FoodInfoPage"
+      xmlns:src="clr-namespace:gajwa_businfo" x:Class="gajwa_businfo.FoodInfoPage"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="가좌고등학교 통합정보안내시스템" Height="1080" Width="1920">
@@ -22,12 +22,12 @@
 
 
 
-        <Label x:Name="Label1" Content="" HorizontalAlignment="Left" Margin="80,229,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="558"/>
-        <Label x:Name="Label2" Content="" HorizontalAlignment="Left" Margin="80,360,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="558"/>
-        <Label x:Name="Label3" Content="" HorizontalAlignment="Left" Margin="80,491,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="558"/>
+        <Label x:Name="Label1" Content="" HorizontalAlignment="Left" Margin="80,229,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="725"/>
+        <Label x:Name="Label2" Content="" HorizontalAlignment="Left" Margin="80,360,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="725"/>
+        <Label x:Name="Label3" Content="" HorizontalAlignment="Left" Margin="80,491,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="725"/>
         <Label x:Name="Label4" Content="" HorizontalAlignment="Left" Margin="80,622,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="725"/>
-        <Label x:Name="Label5" Content="" HorizontalAlignment="Left" Margin="80,753,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="558"/>
-        <Label x:Name="Label6" Content="" HorizontalAlignment="Left" Margin="80,884,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="558"/>
+        <Label x:Name="Label5" Content="" HorizontalAlignment="Left" Margin="80,753,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="725"/>
+        <Label x:Name="Label6" Content="" HorizontalAlignment="Left" Margin="80,884,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="102" FontFamily="Noto Sans Korean Regular" Width="725"/>
         <Image Height="120" Margin="1298,520,484,0" VerticalAlignment="Top" Source="/gajwa-businfo;component/Resources/baseline_image_not_supported_white_48dp.png"/>
         <Border x:Name="FoodImage" Height="628" Margin="950,266,134,0" VerticalAlignment="Top" Width="836" BorderBrush="White" BorderThickness="3"/>
 

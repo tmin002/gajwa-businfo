@@ -9,8 +9,8 @@ namespace gajwa_businfo
     public static class d //debug
     {
 
-        public static bool ENABLE_LOGGING = false;
-        public static string LOG_PATH = "/home/tmin002/Desktop/log.txt";
+        public static bool ENABLE_LOGGING = true;
+        public static string LOG_PATH = Environment.GetEnvironmentVariable("systemdrive") + "/gajwa-businfo-log.txt";
         public static void write(object txt)
         {
             string text = $"[{DateTime.Now.ToString()}] {txt.ToString()}";

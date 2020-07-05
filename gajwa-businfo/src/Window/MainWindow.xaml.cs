@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 using System.IO;
 using System.Threading;
 namespace gajwa_businfo
@@ -20,23 +21,38 @@ namespace gajwa_businfo
     /// </summary>
     public partial class MainWindow : Window
     {
+        private PageType LastPage = PageType.First;
+        private enum PageType { Clock, Food, Bus, Blank, First };
+        private delegate void de();
+
+        private Dictionary<PageType, Page> Pages = new Dictionary<PageType, Page>()
+        {
+            { PageType.Clock, null },
+            { PageType.Food, null },
+            { PageType.Bus, null },
+            { PageType.Blank, null },
+        };
+
+        private Dictionary<ScheduleManager.ScheduleChangedEvents, PageType> OffEventTypes = new Dictionary<ScheduleManager.ScheduleChangedEvents, PageType>()
+        {
+            {ScheduleManager.ScheduleChangedEvents.ClockScreenOff, PageType.Clock },
+            {ScheduleManager.ScheduleChangedEvents.BusScreenOff, PageType.Bus },
+            {ScheduleManager.ScheduleChangedEvents.FoodScreenOff, PageType.Food }
+        };
+
+        //private PageType LastPageType = PageType.Blank; 
+
 
 
         public MainWindow()
         {
+
             InitializeComponent();
             this.Top = 0; this.Left = 0;
-            //todo: 스케줄에 따라 자동으로 페이지 보여지게 만들기
 
-           // BusInfoPage a = new BusInfoPage();
-            //this.Content = a;
-            //ClockPage b = new ClockPage();
-            FoodInfoPage a = new FoodInfoPage();
-            this.Content = a;
-            
+            ScheduleManager.StartWatcher();
 
-            
-
+            ScheduleManager.ScheduleChanged += ScheduleChangedThread; //이벤트 핸들러
 
         }
         private void BusListPanel_Loaded(object sender, RoutedEventArgs e)
@@ -44,5 +60,74 @@ namespace gajwa_businfo
 
         }
 
+
+        private void ScheduleChangedThread(ScheduleChangedEventArgs e)
+        {
+
+            if (e.EventType == ScheduleManager.ScheduleChangedEvents.Reboot)
+            {
+                base_.RebootComputer();
+                return;
+            }
+                
+
+            this.Dispatcher.Invoke(new de(() =>
+            {
+                if (LastPage != PageType.First) Pages[LastPage].Visibility = Visibility.Hidden;
+
+                switch (e.EventType)
+                {
+
+                    case ScheduleManager.ScheduleChangedEvents.ScreenOn:
+                        //todo: usb로 아두이노 조종 코드 넣기
+                        break;
+
+                    case ScheduleManager.ScheduleChangedEvents.ScreenOff:
+                        //todo: usb로 아두이노 조종 코드 넣기
+                        break;
+
+                    case ScheduleManager.ScheduleChangedEvents.ClockScreenOn:
+                        Pages[PageType.Clock] = new ClockPage();
+                        LastPage = PageType.Clock;
+                        this.Content = Pages[PageType.Clock];
+                        break;
+
+                    case ScheduleManager.ScheduleChangedEvents.FoodScreenOn:
+                        Pages[PageType.Food] = new FoodInfoPage();
+                        LastPage = PageType.Food;
+                        this.Content = Pages[PageType.Food];
+
+                        break;
+
+                    case ScheduleManager.ScheduleChangedEvents.BusScreenOn:
+                        Pages[PageType.Bus] = new BusInfoPage();
+                        LastPage = PageType.Bus;
+                        this.Content = Pages[PageType.Bus];
+                        break;
+
+                    default:
+
+                        if (LastPage == OffEventTypes[e.EventType])
+                        {
+                            Pages[PageType.Blank] = new BlankPage();
+                            LastPage = PageType.Blank;
+                            this.Content = Pages[PageType.Blank];
+                        }
+                        break;
+
+
+                }
+            }));
+        }
+
+        private void SettingsWindowLaunch(object sender, KeyEventArgs e)
+        {
+            if (base_.SETTINGS_WINDOW_KEY_ACTIVE_STATE)
+            {
+                MessageBox.Show("settings 창은 아직 WIP 입니다");
+                Process.Start("cmd");
+            }
+        }
     }
+
 }

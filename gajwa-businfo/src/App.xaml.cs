@@ -25,20 +25,17 @@ namespace gajwa_businfo
                 "or if you're trying to maintain the program without the developer, \n" +
                 "visit https://github.com/ssh9930/gajwa-businfo for more information. ");
 
-            d.write("Loaded");
-            d.write($"Parsing URL={BusInfo.websiteURL}");
-            d.write($"Logging={d.ENABLE_LOGGING.ToString()}");
-            d.write($"Log path={d.LOG_PATH}");
+
+
             /////
             /////
             /////
+            d.write("gajwa-businfo launch");
 
-            //Thread BusInfoUpdaterThread = new Thread(BusInfoUpdater);
-            //BusInfoUpdaterThread.Start(); mainwindow.xaml.cs 에 해당코드 있다 
-
-            //여기는 buslist.txt 불러오는 곳
-
-
+            base_.LoadSchedules();
+            base_.Update057Average(0, true);
+            base_.UpdateBusShowList();
+            ConfigLoader.SaveConfigToFile(base_.SCHEDULES_CONFIGCONTANER, base_.SCHEDULES_FILE_LOCATION);
             
             
 
@@ -48,7 +45,8 @@ namespace gajwa_businfo
         {
 
             MessageBox.Show(e.Exception.ToString());
-            Process.Start("errshow.exe",e.Exception.ToString());
+
+            //a.Start();
             
             //Form1 a = new Form1();
             //a.ShowDialog();

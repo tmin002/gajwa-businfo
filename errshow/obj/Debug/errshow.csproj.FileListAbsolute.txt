@@ -13,3 +13,16 @@ C:\Users\team9\Desktop\project\gajwa-businfo\errshow\obj\Debug\errshow.exe
 C:\Users\team9\Desktop\project\gajwa-businfo\errshow\obj\Debug\errshow.pdb
 C:\Users\team9\Desktop\project\gajwa-businfo\executables\errshow.exe
 C:\Users\team9\Desktop\project\gajwa-businfo\executables\errshow.pdb
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\executables\errshow.exe
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\executables\errshow.pdb
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow.csprojAssemblyReference.cache
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\MainWindow.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\App.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow_MarkupCompile.cache
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow_MarkupCompile.lref
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\MainWindow.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow.g.resources
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow.Properties.Resources.resources
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow.csproj.GenerateResource.cache
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow.exe
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\errshow\obj\Debug\errshow.pdb

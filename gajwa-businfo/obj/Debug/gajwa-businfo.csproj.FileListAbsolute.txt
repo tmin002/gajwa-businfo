@@ -104,3 +104,9 @@ C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Deb
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\ClockPage.baml
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\FoodInfoPage.g.cs
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\FoodInfoPage.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\ClockCampaignPanel.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Panels\ClockCampaignPanel.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\BlankPage.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\BlankPage.baml
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\SettingsWindow.g.cs
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo\obj\Debug\src\Window\SettingsWindow.baml

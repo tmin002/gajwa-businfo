@@ -26,15 +26,16 @@ namespace gajwa_businfo
         private Thread BusListPanelsUpdateThread;
         private Thread Bus057UpdateThread;
         private bool Bus057ActiveState = false;
-        private bool BusThread_Stop = false;
+        private int BusThread_RunningState = 0; //0: no thread running, 2: all thread running, 3: all thread stop signal 5: all thread stop
+        //한번 멈추면 이 창 객체 재정의 필요.
 
         private Bus057PanelActiveState Bus057ActivePanel = new Bus057PanelActiveState()
-        { Visibility = Visibility.Hidden, Margin = new Thickness(70,60, 0, 0),
+        { Visibility = Visibility.Hidden, Margin = new Thickness(70,200, 0, 0),
             HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top
         };
 
         private Bus057PanelNormalState Bus057NormalPanel = new Bus057PanelNormalState() 
-        { Visibility = Visibility.Hidden, Margin = new Thickness(70,60, 0, 0) ,
+        { Visibility = Visibility.Hidden, Margin = new Thickness(70,200, 0, 0) ,
             HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top
         };
 
@@ -47,11 +48,15 @@ namespace gajwa_businfo
         {
             InitializeComponent();
 
+            this.IsVisibleChanged += (object sender, DependencyPropertyChangedEventArgs e) => //sender, e는 사실상 사용되지 않는다.
+            {
+                if (this.Visibility == Visibility.Hidden) StopUpdate();
+            };
 
             //업데이트
             BusInfo.UpdateBusInfoList();
-            base_.Update057Average(0, true);
-            base_.UpdateBusShowList();
+           // base_.Update057Average(0, true); //app.xaml에서 담당.
+           // base_.UpdateBusShowList();
 
             //Bus057Panel 2개 추가
 
@@ -79,9 +84,9 @@ namespace gajwa_businfo
                     b.Margin = new Thickness(
 
                         this.Width - b.Width, //left, 여기서부터 시계방향으로 돌아감
-                        TopLine.Y1 + bus_list_panel_add_cnt * b.Height,
+                        TopPanel.Height + bus_list_panel_add_cnt * b.Height,
                         0,
-                        this.Height - (TopLine.Y1 + bus_list_panel_add_cnt * b.Height + b.Height)
+                        this.Height - (TopPanel.Height + bus_list_panel_add_cnt * b.Height + b.Height)
 
                         );
 
@@ -107,8 +112,9 @@ namespace gajwa_businfo
 
         private void UpdateBusListPanels() //외부 쓰레드에서 호출되는 함수
         {
+            BusThread_RunningState += 1;
 
-            while (!BusThread_Stop)
+            while (BusThread_RunningState < 3)
             {
                 BusInfo.UpdateBusInfoList();
 
@@ -122,14 +128,15 @@ namespace gajwa_businfo
                 Thread.Sleep(base_.BUS_UPDATE_TERM);
             }
 
-            BusThread_Stop = false;
+            BusThread_RunningState += 1;
+            d.write($"UpdateBusListPanels() Termination, BusThread_RunningState={BusThread_RunningState}");
 
         }
 
         private void Update057() //외부 쓰레드에서 호출되는 함수, UpdateBusLIstPanels()로부터 호출받음.
         {
             //UpdateBusInfoList() 했다고 가정
-            BusInfo.PrintBusInfoList();
+            //BusInfo.PrintBusInfoList();
             var bsinfo = BusInfo.FindByBusName("057");
 
             if (bsinfo != null)
@@ -182,8 +189,8 @@ namespace gajwa_businfo
             LastArrivalSec.Visibility = Visibility.Visible;
             LastArrivalSec2.Visibility = Visibility.Hidden;
 
-            LastArrivalSec1.Content = "현재 ";
-            LastArrivalSec.Content = "가좌마을5단지아파트 경유중";
+            LastArrivalSec1.Content = "여기다가 뭐넣을지";
+            LastArrivalSec.Content = "정해야한다";
         }
 
         private void Bus057PanelNormalMode()
@@ -202,8 +209,9 @@ namespace gajwa_businfo
 
         private void Update057Text() //외부 쓰레드에서 실행됨
         {
+            BusThread_RunningState += 1;
 
-            while (!BusThread_Stop)
+            while (BusThread_RunningState < 3)
             { 
 
                 if (Bus057ActiveState)
@@ -254,14 +262,17 @@ namespace gajwa_businfo
 
             }
 
-            BusThread_Stop = false;
+            BusThread_RunningState += 1;
+            d.write($"Update057Text() Termination, BusThread_RunningState={BusThread_RunningState}");
 
         }
 
         public void StopUpdate() //모든걸 멈출때 사용되는 함수
         {
 
-            BusThread_Stop = true;
+            BusThread_RunningState = 3;
+
+            if (Bus057TermCountThread.Started) Bus057TermCountThread.StopCount();
 
 
         }

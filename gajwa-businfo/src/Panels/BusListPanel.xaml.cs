@@ -95,7 +95,7 @@ namespace gajwa_businfo
 
         public void SetPanelBusInfo(BusInfo b)
         {
-            d.write(b.busname);
+            //d.write(b.busname);
             PanelBusName = b.busname;
             PanelBusTime = b.bustime;
             PanelBusStation = b.busstatus;

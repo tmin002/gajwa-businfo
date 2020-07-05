@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace gajwa_businfo.src
+namespace gajwa_businfo
 {
     /// <summary>
     /// CampaignPanel.xaml에 대한 상호 작용 논리

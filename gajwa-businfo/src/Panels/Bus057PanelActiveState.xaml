@@ -10,7 +10,7 @@
         <Border Margin="0,0,0,0" CornerRadius="30" Background="#FBC02D"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="10,40,0,0" VerticalAlignment="Top" Width="100" Source="/gajwa-businfo;component/Resources/baseline_directions_bus_black_48dp.png" RenderTransformOrigin="0.589,0.222"/>
         <Label Content="057" HorizontalAlignment="Left" Margin="138,19,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" FontSize="86" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
-        <Label x:Name="BusTime" Content="2분내도착" HorizontalAlignment="Left" Margin="365,26,0,0" VerticalAlignment="Top" Foreground="#D50000" FontSize="80" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
+        <Label x:Name="BusTime" Content="잠시후도착" HorizontalAlignment="Left" Margin="365,26,0,0" VerticalAlignment="Top" Foreground="#D50000" FontSize="80" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
 
     </Grid>
 </UserControl>

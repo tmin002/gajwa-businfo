@@ -5,7 +5,7 @@ using System.IO;
 using System;
 
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 using System.Threading;
 
 namespace gajwa_businfo
@@ -58,20 +58,30 @@ namespace gajwa_businfo
             List<string> bustime = new List<string>(); //n분, 빈칸이면 차고지 or 정보없음
             List<string> busstatus = new List<string>(); //n번째 정류소 전 or 차고지대기 or 정보없음
 
-            if (FirstLaunch)
+            if (FirstLaunch) 
             {
-                var f = new FirefoxOptions();
-                f.AddArgument("-headless");
-                var s = FirefoxDriverService.CreateDefaultService();
-                s.HideCommandPromptWindow = true;
 
-                driver = new FirefoxDriver(s, f);
+                ChromeOptions options = new ChromeOptions();
+
+                if (base_.RUNNING_ON_WINPE)
+                {
+                    options.BinaryLocation = base_.WINPE_BROWSER_BINARY_LOCATION;
+                }
+
+                ChromeDriverService service = ChromeDriverService.CreateDefaultService();
+                service.HideCommandPromptWindow = true;
+
+                options.AddArgument("headlessㅁ");
+
+                driver = new ChromeDriver(service, options);
+
                 FirstLaunch = false;
             }
 
             BusInfoList = new List<BusInfo>();
             driver.Url = websiteURL;
-            Thread.Sleep(300);
+
+            Thread.Sleep(base_.BUSINFO_LOADING_WAIT_TIME);
 
 
             foreach (IWebElement i in driver.FindElements(By.ClassName("bus-num-y"))) busname.Add(i.Text);

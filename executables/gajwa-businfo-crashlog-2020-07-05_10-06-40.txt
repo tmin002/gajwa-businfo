@@ -1,0 +1,5 @@
+2020-07-05 오전 10:06:41
+System.ComponentModel.Win32Exception (0x80004005): 지정된 파일을 찾을 수 없습니다
+   위치: System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   위치: System.Diagnostics.Process.Start()
+   위치: gajwa_businfo_pe_startup.Program.Main() 파일 C:\Users\team9\Desktop\project\gajwa-businfo-pe-startup\gajwa-businfo-pe-startup\Program.cs:줄 31

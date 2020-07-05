@@ -4,18 +4,15 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:gajwa_businfo"
-      xmlns:src="clr-namespace:gajwa_businfo.src" x:Class="gajwa_businfo.ClockPage"
+      xmlns:src="clr-namespace:gajwa_businfo" x:Class="gajwa_businfo.ClockPage"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="가좌고등학교 통합정보안내시스템" Height="1080" Width="1920">
 
     <Grid Background="#FF0F0F0F" Margin="0,0,0,0" x:Name="MainGrid" Cursor="None">
-
-        <src:CampaignPanel HorizontalAlignment="Left" Height="150" Margin="0,930,0,0" VerticalAlignment="Top" Width="1920"/>
-        <Label x:Name="clockLabel" Content="00:00:00" HorizontalAlignment="Left" Margin="668,133,0,0" VerticalAlignment="Top" Foreground="White" FontSize="200" Height="292" FontFamily="Noto Sans Korean Bold" Width="843"/>
-        <Label x:Name="leftLabel" Content="-00:00" HorizontalAlignment="Left" Margin="668,484,0,0" VerticalAlignment="Top" Foreground="#ef9a9a" FontSize="200" Height="292" FontFamily="Noto Sans Korean Bold" Width="843" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="192" Margin="438,193,0,0" VerticalAlignment="Top" Width="192" Source="/gajwa-businfo;component/Resources/baseline_schedule_white_48.png"/>
-        <Image HorizontalAlignment="Left" Height="192" Margin="438,541,0,0" VerticalAlignment="Top" Width="192" Source="/gajwa-businfo;component/Resources/notification-red-custom.png" RenderTransformOrigin="0.542,0.37"/>
+        <Label x:Name="leftLabel" Content="00:00" HorizontalAlignment="Left" Margin="700,281,0,0" VerticalAlignment="Top" Foreground="White" FontSize="300" Height="404" FontFamily="Noto Sans Korean Bold" Width="817" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="287" Margin="382,373,0,0" VerticalAlignment="Top" Width="294" Source="/gajwa-businfo;component/Resources/outline_notifications_none_white_48dp.png" RenderTransformOrigin="0.542,0.37"/>
+        <local:ClockCampaignPanel HorizontalAlignment="Left" Height="130" Margin="0,950,0,0" VerticalAlignment="Top" Width="1920" x:Name="DatePanel"/>
 
     </Grid>
 </Page>

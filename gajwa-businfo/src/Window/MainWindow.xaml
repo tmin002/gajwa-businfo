@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gajwa_businfo"
-        xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo.src" x:Class="gajwa_businfo.MainWindow"
+        xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo" x:Class="gajwa_businfo.MainWindow"
         mc:Ignorable="d"
         Title="가좌고등학교 버스정보안내시스템" Height="1080" Width="1920"
-        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Topmost="False" Cursor="None">
+        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Background="#FF0F0F0F" Topmost="False" Cursor="None" KeyDown="SettingsWindowLaunch">
+
 </Window>

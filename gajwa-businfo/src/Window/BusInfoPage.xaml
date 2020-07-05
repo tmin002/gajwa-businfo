@@ -4,29 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gajwa_businfo"
-        xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo.src" x:Class="gajwa_businfo.BusInfoPage"
+        xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo" x:Class="gajwa_businfo.BusInfoPage"
         mc:Ignorable="d"
         Title="가좌고등학교 통합정보안내시스템" Height="1080" Width="1920">
 
     <Grid Background="#FF0F0F0F" Margin="0,0,0,0" x:Name="MainGrid" Cursor="None">
-        <Line X1="1020" Y1="60" X2="1920" Y2="60" Stroke="White" StrokeThickness="1" Height="1080" Width="1920" x:Name="TopLine"/>
+        <Line X1="1020" Y1="200" X2="1920" Y2="200" Stroke="White" StrokeThickness="0" Height="1080" Width="1920" x:Name="TopLine"/>
 
         <!--placeholders, only for sample design view purpose.-->
-        <src:BusListPanel HorizontalAlignment="Left" Height="180" Margin="1020,60,0,0" VerticalAlignment="Top" Width="900"/>
-        <src:BusListPanel HorizontalAlignment="Left" Height="180" Margin="1020,240,0,0" VerticalAlignment="Top" Width="900"/>
-        <src:BusListPanel HorizontalAlignment="Left" Height="180" Margin="1020,420,0,0" VerticalAlignment="Top" Width="900"/>
-        <src:BusListPanel HorizontalAlignment="Left" Height="180" Margin="1020,600,0,0" VerticalAlignment="Top" Width="900"/>
-        <src:Bus057PanelNormalState HorizontalAlignment="Left" Height="180" Margin="70,60,0,0" VerticalAlignment="Top" Width="892"/>
+
         <!--placeholders, only for sample design view purpose.-->
 
 
 
-        <Label x:Name="LastArrivalSec1" Content="마지막 출발로부터" HorizontalAlignment="Left" Margin="78,290,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
-        <Label x:Name="LastArrivalSec" Content="00:00" HorizontalAlignment="Left" Margin="78,411,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
-        <Label x:Name="LastArrivalSec2" Content="경과" HorizontalAlignment="Left" Margin="294,411,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
-        <Label Content="평균배차간격" HorizontalAlignment="Left" Margin="78,559,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
-        <Label x:Name="Average057Term" Content="약 5.7분" HorizontalAlignment="Left" Margin="78,680,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
-        <src1:CampaignPanel HorizontalAlignment="Left" Height="150" Margin="0,930,0,0" VerticalAlignment="Top" Width="1920"/>
+        <Label x:Name="LastArrivalSec1" Content="마지막 출발로부터" HorizontalAlignment="Left" Margin="74,428,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
+        <Label x:Name="LastArrivalSec" Content="00:00" HorizontalAlignment="Left" Margin="74,549,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
+        <Label x:Name="LastArrivalSec2" Content="경과" HorizontalAlignment="Left" Margin="290,549,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
+        <Label Content="평균배차간격" HorizontalAlignment="Left" Margin="74,697,0,0" VerticalAlignment="Top" Foreground="White" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Medium"/>
+        <Label x:Name="Average057Term" Content="약 5.7분" HorizontalAlignment="Left" Margin="74,818,0,0" VerticalAlignment="Top" Foreground="#FFEF9A9A" FontSize="75" RenderTransformOrigin="0.309,0.74" Height="121" FontFamily="Noto Sans Korean Bold"/>
+        <local:CampaignPanel HorizontalAlignment="Left" Height="130" Margin="0,0,0,0" VerticalAlignment="Top" Width="1920" x:Name="TopPanel"/>
+
 
 
     </Grid>
