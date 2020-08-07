@@ -37,7 +37,7 @@ tvon=8:00
 tvoff=18:30
 clock=8:50-9:00
 food=13:00-13:40
-bus=16:50-18:00
+bus=16:50-20:00
 firstbelltime=9:00
 reboot=00:00
 
@@ -45,24 +45,27 @@ reboot=00:00
 active=true
 tvon=8:00
 tvoff=18:30
-clock=8:50-9:00
-food=13:00-13:40
-bus=16:50-18:00
+clock=23:57-23:58
+food=23:58-23:59
+bus=23:59-24:00
 firstbelltime=9:00
 reboot=00:00
 
 [saturday]
-active=false
+active=true
+clock=00:00-00:01
+food=00:01-00:02
+bus=00:02-00:03
 
 [sunday]
 active=false
 
-[custom_2020-07-05]
+[custom_2020-08-05]
 firstbelltime=9:34
 active=true
 tvon=8:00
 tvoff=18:30
 clock=9:27-9:34
-food=9:25-9:26
-bus=9:17-9:24
+food=00:00-00:01
+bus=9:12-23:00
 reboot=9:34

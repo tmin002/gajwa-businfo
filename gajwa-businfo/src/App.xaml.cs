@@ -6,6 +6,7 @@ using System.Linq;
 using System.Diagnostics;
 using System.Windows;
 using System.Threading;
+using System.Windows.Threading;
 using System.IO;
 
 namespace gajwa_businfo
@@ -19,7 +20,7 @@ namespace gajwa_businfo
         public App()
         {
 
-            Console.WriteLine("BUSINFO-GAJWA v1.0\nbased on selenium.webdriver");
+            Console.WriteLine("BUSINFO-GAJWA v2.0\nbased on selenium.webdriver");
             Console.WriteLine(
                 "IMPORTANT: If the developer had already been graduated from gajwa highschool, \n" +
                 "or if you're trying to maintain the program without the developer, \n" +
@@ -30,24 +31,68 @@ namespace gajwa_businfo
             /////
             /////
             /////
+            ///
+
             d.write("gajwa-businfo launch");
+            d.write("checking vital files");
+
+            string[] vitalFiles = new string[] {"057-average.txt", "buslist.txt", "schedule.txt" };
+            string vitalFileChkFailMsg = "Vital file missing: ";
+            bool vitalFileChk = true;
+
+            foreach (string i in vitalFiles)
+            {
+                if (!File.Exists(base_.PWD + "/" + i))
+                {
+                    vitalFileChkFailMsg += i + ", ";
+                    vitalFileChk = false;
+                }
+            }
+
+            if (!vitalFileChk)
+            {
+                Process.Start(base_.ERR_PROGRAM_LOCATION, vitalFileChkFailMsg.Replace("\n", "\\n"));
+            }
 
             base_.LoadSchedules();
             base_.Update057Average(0, true);
             base_.UpdateBusShowList();
-            ConfigLoader.SaveConfigToFile(base_.SCHEDULES_CONFIGCONTANER, base_.SCHEDULES_FILE_LOCATION);
-            
-            
+
+
+            /////
+            /////
+            /////
+            ///
+
+            int cntdown = base_.NETWORK_CHECK_TIMEOUT_SEC;
+            while (!base_.IsNetworkAvailable())
+            {
+
+                if (cntdown <= 0)
+                {
+                    d.write("Network check timeout, terminating.");
+                    Environment.Exit(1);
+                }
+
+                cntdown -= 1;
+                Thread.Sleep(1000);
+            }
+
 
         }
 
-        private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+        private void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs args)
         {
 
-            MessageBox.Show(e.Exception.ToString());
+            //될지 모르겠는 기능임.
+            //d.write(e.Exception.ToString());
+
+            //Process.Start("C:/Users/team9/Desktop/project/gajwa-businfo/gajwa-businfo/executables/gajwa-businfo-err.exe", e.Exception.ToString().Replace("\n", "\\n"));
+             args.Handled = true;
+             MessageBox.Show(args.Exception.ToString());
 
             //a.Start();
-            
+
             //Form1 a = new Form1();
             //a.ShowDialog();
         }

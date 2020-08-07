@@ -1,0 +1,8 @@
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.csprojAssemblyReference.cache
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa_businfo_err.Properties.Resources.resources
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.csproj.GenerateResource.cache
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\executables\gajwa-businfo-err.exe
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\executables\gajwa-businfo-err.pdb
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa_businfo_err.ErrWindow.resources
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.exe
+C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.pdb

@@ -36,6 +36,8 @@ namespace gajwa_businfo
             get {
                 if (DateTime.Now.DayOfYear != LastScheduleLoadDate)
                 {
+
+                    LastScheduleLoadDate = DateTime.Now.DayOfYear;
                     LastScheduleKeys = new Dictionary<ScheduleChangedEvents, int>() //todo: 효율성 개선 필요.
                     {
                         {ScheduleManager.ScheduleChangedEvents.ScreenOn,  ConvertArrayToTime(base_.TODAY_SCHEDULE.ScreenOnTime) },
@@ -124,10 +126,19 @@ namespace gajwa_businfo
 
         private static void RaiseEvent(ScheduleManager.ScheduleChangedEvents type)
         {
-            d.write($"[ScheduleWatcher] {type.ToString()} raising");
 
-            if (ScheduleChanged == null) Thread.Sleep(base_.SCHEDULE_WATCHER_EVENT_DECLARE_DELAY);
-            ScheduleChanged.Invoke(new ScheduleChangedEventArgs(type));
+            if (base_.TODAY_SCHEDULE.Enable)
+            {
+                d.write($"[ScheduleWatcher] {type.ToString()} raising");
+
+                if (ScheduleChanged == null) Thread.Sleep(base_.SCHEDULE_WATCHER_EVENT_DECLARE_DELAY);
+                ScheduleChanged.Invoke(new ScheduleChangedEventArgs(type));
+            }
+            else
+            {
+                d.write($"[ScheduleWatcher] was to raise {type.ToString()}, but today's not display day. ignoring request.");
+            }
+
         }
 
         public static void StartWatcher() => ScheduleWatcher.Start();

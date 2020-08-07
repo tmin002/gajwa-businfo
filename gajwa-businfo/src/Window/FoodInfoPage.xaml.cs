@@ -22,7 +22,7 @@ namespace gajwa_businfo
     public partial class FoodInfoPage : Page
     {
 
-        private static IWebDriver driver;
+        private static ChromeDriver driver;
         private List<string> foodList = new List<string>() { "", "", "", "", "", "" };
         private delegate void de();
         private bool stopupdate = false;
@@ -37,28 +37,11 @@ namespace gajwa_businfo
 
 
             InitializeComponent();
-            TitleLabel.Content = DateTime.Now.ToString($"M월 dd일 {base_.ConvertEnglishToKoreanDayString(DateTime.Now.DayOfWeek.ToString())} 급식"); 
-
-            ChromeOptions options = new ChromeOptions();
-
-            if (base_.RUNNING_ON_WINPE)
-            {
-                options.BinaryLocation = base_.WINPE_BROWSER_BINARY_LOCATION;
-            }
-
-            ChromeDriverService service = ChromeDriverService.CreateDefaultService();
-            service.HideCommandPromptWindow = true;
-
-            options.AddArgument("headlessㅁ");
-
-            driver = new ChromeDriver(service, options);
-
-            //이미지 가져오기
-            Thread t = new Thread(UpdateFoodImage);
-            t.Start();
+            TitleLabel.Content = DateTime.Now.ToString($"M월 dd일 {base_.ConvertEnglishToKoreanDayString(DateTime.Now.DayOfWeek.ToString())} 급식");
+            driver = base_.GetChromeDriver();
 
             //식단 리스트 가져오기
-            driver.Url = "http://gajwa-h.hs.kr/";
+            base_.DriverNavigate(driver, "http://gajwa-h.hs.kr/");
 
             var w_cnt = 0;
             foreach (IWebElement i in driver.FindElements(By.TagName("pre")))
@@ -88,7 +71,9 @@ namespace gajwa_businfo
                 if (foodList[i] != "") Labels[i].Content = foodList[i];
             }
 
-
+            //이미지 가져오기
+            Thread UpdateFoodImageThread = new Thread(UpdateFoodImage);
+            UpdateFoodImageThread.Start();
 
         }
 
@@ -96,9 +81,41 @@ namespace gajwa_businfo
         {
             while (!stopupdate)
             {
+
+                if (File.Exists(base_.FOODINFO_TMP_FILE)) File.Delete(base_.FOODINFO_TMP_FILE);
+
+                var driver2 = base_.GetChromeDriver();
+                base_.DriverNavigate(driver2, $"http://gajwa-h.hs.kr/_File/up_file/gajwa-h.hs.kr/meal/{DateTime.Now.ToString("yyyyMMdd")}_2.jpg");
+                var imgelement = driver2.FindElementsByTagName("img")[0];
+                var imgelementattr = imgelement.GetAttribute("src");
+
+                if (imgelementattr.Contains("error"))
+                {
+                    Thread.Sleep(1000);
+                    continue;
+                }
+                else
+                {
+
+                    driver2.Manage().Window.Size = new System.Drawing.Size(959, 721);
+
+                    Screenshot ss = ((ITakesScreenshot)driver2).GetScreenshot();
+                    ss.SaveAsFile(base_.FOODINFO_TMP_FILE,
+                    ScreenshotImageFormat.Png);
+                }
+
+
                 this.Dispatcher.Invoke(new de(() =>
-                FoodImage.Background = new ImageBrush(new BitmapImage(new Uri($"http://gajwa-h.hs.kr/_File/up_file/gajwa-h.hs.kr/meal/{DateTime.Now.ToString("yyyyMMdd")}_2.jpg")))));
-                Thread.Sleep(1000);
+                {
+
+                    FoodImage.Background = new ImageBrush(new BitmapImage(new Uri(base_.FOODINFO_TMP_FILE)));
+
+                }
+                ));
+
+                driver2.Quit();
+                break; //여기까지 온거는 성공한거임.
+
             }
             stopupdate = false;
         }

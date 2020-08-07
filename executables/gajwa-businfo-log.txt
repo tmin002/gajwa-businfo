@@ -1,0 +1,180 @@
+[2020-08-05 오후 9:30:06] gajwa-businfo launch
+[2020-08-05 오후 9:30:06] checking vital files
+[2020-08-05 오후 9:30:06] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:40:46] gajwa-businfo launch
+[2020-08-05 오후 9:40:46] checking vital files
+[2020-08-05 오후 9:41:44] gajwa-businfo launch
+[2020-08-05 오후 9:41:44] checking vital files
+[2020-08-05 오후 9:41:44] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:42:26] gajwa-businfo launch
+[2020-08-05 오후 9:42:26] checking vital files
+[2020-08-05 오후 9:42:26] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:43:34] gajwa-businfo launch
+[2020-08-05 오후 9:43:34] checking vital files
+[2020-08-05 오후 9:43:34] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:43:58] gajwa-businfo launch
+[2020-08-05 오후 9:43:58] checking vital files
+[2020-08-05 오후 9:43:58] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:44:59] gajwa-businfo launch
+[2020-08-05 오후 9:44:59] checking vital files
+[2020-08-05 오후 9:45:00] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:45:56] gajwa-businfo launch
+[2020-08-05 오후 9:45:56] checking vital files
+[2020-08-05 오후 9:45:56] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:46:18] gajwa-businfo launch
+[2020-08-05 오후 9:46:18] checking vital files
+[2020-08-05 오후 9:46:18] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:56:33] gajwa-businfo launch
+[2020-08-05 오후 9:56:33] checking vital files
+[2020-08-05 오후 9:56:33] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:56:49] gajwa-businfo launch
+[2020-08-05 오후 9:56:50] checking vital files
+[2020-08-05 오후 9:56:50] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 9:57:15] gajwa-businfo launch
+[2020-08-05 오후 9:57:15] checking vital files
+[2020-08-05 오후 9:57:15] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:06:15] gajwa-businfo launch
+[2020-08-05 오후 10:06:15] checking vital files
+[2020-08-05 오후 10:06:15] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:08:36] gajwa-businfo launch
+[2020-08-05 오후 10:08:36] checking vital files
+[2020-08-05 오후 10:08:36] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:09:00] gajwa-businfo launch
+[2020-08-05 오후 10:09:00] checking vital files
+[2020-08-05 오후 10:09:00] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:09:24] gajwa-businfo launch
+[2020-08-05 오후 10:09:24] checking vital files
+[2020-08-05 오후 10:09:24] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:10:29] gajwa-businfo launch
+[2020-08-05 오후 10:10:29] checking vital files
+[2020-08-05 오후 10:10:29] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:10:50] gajwa-businfo launch
+[2020-08-05 오후 10:10:50] checking vital files
+[2020-08-05 오후 10:10:50] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:11:14] gajwa-businfo launch
+[2020-08-05 오후 10:11:14] checking vital files
+[2020-08-05 오후 10:11:15] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:13:02] gajwa-businfo launch
+[2020-08-05 오후 10:13:02] checking vital files
+[2020-08-05 오후 10:13:02] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:29:10] gajwa-businfo launch
+[2020-08-05 오후 10:29:10] checking vital files
+[2020-08-05 오후 10:29:10] [ScheduleWatcher] BusScreenOn raising
+[2020-08-05 오후 10:30:47] gajwa-businfo launch
+[2020-08-05 오후 10:30:47] checking vital files
+[2020-08-05 오후 10:30:47] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:38:03] gajwa-businfo launch
+[2020-08-06 오후 5:38:03] checking vital files
+[2020-08-06 오후 5:38:03] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:38:04] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:40:00] gajwa-businfo launch
+[2020-08-06 오후 5:40:00] checking vital files
+[2020-08-06 오후 5:40:00] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:41:11] gajwa-businfo launch
+[2020-08-06 오후 5:41:11] checking vital files
+[2020-08-06 오후 5:41:11] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:41:12] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:42:35] gajwa-businfo launch
+[2020-08-06 오후 5:42:35] checking vital files
+[2020-08-06 오후 5:42:36] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:42:36] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:42:41] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:42:47] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:42:53] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:42:58] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:51:40] gajwa-businfo launch
+[2020-08-06 오후 5:51:40] checking vital files
+[2020-08-06 오후 5:51:40] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:51:41] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:51:56] [057watcher] 057 arrived
+[2020-08-06 오후 5:51:56] [057watcher] Starting new term counter
+[2020-08-06 오후 5:55:19] gajwa-businfo launch
+[2020-08-06 오후 5:55:19] checking vital files
+[2020-08-06 오후 5:55:20] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:55:21] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:58:41] gajwa-businfo launch
+[2020-08-06 오후 5:58:41] checking vital files
+[2020-08-06 오후 5:58:41] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:58:42] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:58:47] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:58:53] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:59:03] gajwa-businfo launch
+[2020-08-06 오후 5:59:03] checking vital files
+[2020-08-06 오후 5:59:04] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 5:59:05] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 5:59:38] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:59:43] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:59:49] [057watcher] null string received, ignoring
+[2020-08-06 오후 5:59:54] [057watcher] null string received, ignoring
+[2020-08-06 오후 6:00:46] gajwa-businfo launch
+[2020-08-06 오후 6:00:46] checking vital files
+[2020-08-06 오후 6:00:46] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 6:01:15] gajwa-businfo launch
+[2020-08-06 오후 6:01:15] checking vital files
+[2020-08-06 오후 6:01:15] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 6:01:47] gajwa-businfo launch
+[2020-08-06 오후 6:01:47] checking vital files
+[2020-08-06 오후 6:01:47] [ScheduleWatcher] ScreenOn raising
+[2020-08-06 오후 6:01:48] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 6:01:48] 1
+[2020-08-06 오후 6:01:53] 1
+[2020-08-06 오후 6:02:01] 1
+[2020-08-06 오후 6:02:07] 1
+[2020-08-06 오후 6:02:10] [057watcher] null string received, ignoring
+[2020-08-06 오후 6:02:15] 1
+[2020-08-06 오후 6:02:15] [057watcher] null string received, ignoring
+[2020-08-06 오후 6:02:20] 1
+[2020-08-06 오후 6:02:21] [057watcher] null string received, ignoring
+[2020-08-06 오후 6:02:26] 1
+[2020-08-06 오후 7:32:39] gajwa-businfo launch
+[2020-08-06 오후 7:32:39] checking vital files
+[2020-08-06 오후 7:33:33] gajwa-businfo launch
+[2020-08-06 오후 7:33:33] checking vital files
+[2020-08-06 오후 7:33:33] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 7:34:28] gajwa-businfo launch
+[2020-08-06 오후 7:34:28] checking vital files
+[2020-08-06 오후 7:34:28] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 7:34:56] [057watcher] null string received, ignoring
+[2020-08-06 오후 7:35:02] [057watcher] null string received, ignoring
+[2020-08-06 오후 7:35:09] [057watcher] null string received, ignoring
+[2020-08-06 오후 7:44:36] gajwa-businfo launch
+[2020-08-06 오후 7:44:36] checking vital files
+[2020-08-06 오후 7:44:36] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 7:46:22] gajwa-businfo launch
+[2020-08-06 오후 7:46:23] checking vital files
+[2020-08-06 오후 7:46:23] [ScheduleWatcher] BusScreenOn raising
+[2020-08-06 오후 7:46:27] Network Loss detected, terminating application
+[2020-08-07 오후 7:07:54] gajwa-businfo launch
+[2020-08-07 오후 7:07:54] checking vital files
+[2020-08-07 오후 7:08:28] gajwa-businfo launch
+[2020-08-07 오후 7:08:28] checking vital files
+[2020-08-07 오후 7:08:46] gajwa-businfo launch
+[2020-08-07 오후 7:08:46] checking vital files
+[2020-08-07 오후 7:08:46] [ScheduleWatcher] was to raise BusScreenOn, but today's not display day. ignoring request.
+[2020-08-07 오후 7:18:06] gajwa-businfo launch
+[2020-08-07 오후 7:18:06] checking vital files
+[2020-08-07 오후 7:18:06] 20
+[2020-08-07 오후 7:18:08] 19
+[2020-08-07 오후 7:18:09] 18
+[2020-08-07 오후 7:18:10] 17
+[2020-08-07 오후 7:18:11] 16
+[2020-08-07 오후 7:18:12] 15
+[2020-08-07 오후 7:18:13] 14
+[2020-08-07 오후 7:18:14] 13
+[2020-08-07 오후 7:18:15] 12
+[2020-08-07 오후 7:18:17] [ScheduleWatcher] was to raise BusScreenOn, but today's not display day. ignoring request.
+[2020-08-07 오후 11:55:58] gajwa-businfo launch
+[2020-08-07 오후 11:55:58] checking vital files
+[2020-08-07 오후 11:57:00] [ScheduleWatcher] was to raise ClockScreenOn, but today's not display day. ignoring request.
+[2020-08-07 오후 11:57:18] gajwa-businfo launch
+[2020-08-07 오후 11:57:18] checking vital files
+[2020-08-07 오후 11:57:19] [ScheduleWatcher] ClockScreenOn raising
+[2020-08-07 오후 11:58:00] [ScheduleWatcher] ClockScreenOff raising
+[2020-08-07 오후 11:58:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-08-07 오후 11:59:00] [ScheduleWatcher] FoodScreenOff raising
+[2020-08-07 오후 11:59:00] [ScheduleWatcher] BusScreenOn raising
+[2020-08-08 오전 12:00:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-08-08 오전 12:00:00] [ScheduleWatcher] Reboot raising
+[2020-08-08 오전 12:00:00] Update057Text() Termination, BusThread_RunningState=4
+[2020-08-07 오후 7:47:07] gajwa-businfo launch
+[2020-08-07 오후 7:47:07] checking vital files

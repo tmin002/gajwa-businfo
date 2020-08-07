@@ -88,30 +88,3 @@ namespace gajwa_businfo
     }
 }
 
-
-
-
-
-
-public abstract class GeeksForGeeks
-{
-
-    // abstract method 'gfg()' 
-    public abstract void gfg();
-
-}
-
-// class 'GeeksForGeeks' inherit 
-// in child class 'Geek1' 
-public partial class Geek1 : GeeksForGeeks
-{
-
-    // abstract method 'gfg()'  
-    // declare here with  
-    // 'override' keyword 
-    public override void gfg()
-    {
-        throw new NotImplementedException();
-    }
-
-}

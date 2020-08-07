@@ -135,6 +135,7 @@ namespace gajwa_businfo
 
         private void Update057() //외부 쓰레드에서 호출되는 함수, UpdateBusLIstPanels()로부터 호출받음.
         {
+
             //UpdateBusInfoList() 했다고 가정
             //BusInfo.PrintBusInfoList();
             var bsinfo = BusInfo.FindByBusName("057");
@@ -189,8 +190,8 @@ namespace gajwa_businfo
             LastArrivalSec.Visibility = Visibility.Visible;
             LastArrivalSec2.Visibility = Visibility.Hidden;
 
-            LastArrivalSec1.Content = "여기다가 뭐넣을지";
-            LastArrivalSec.Content = "정해야한다";
+            LastArrivalSec1.Content = "현재 5단지앞 정류장 경유중";
+            LastArrivalSec.Content = "도착까지 한정거장 전";
         }
 
         private void Bus057PanelNormalMode()
@@ -283,4 +284,6 @@ namespace gajwa_businfo
         }
 
     }
+
+
 }

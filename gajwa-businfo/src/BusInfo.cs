@@ -42,7 +42,7 @@ namespace gajwa_businfo
         public static string websiteURL =
         "http://m.gbis.go.kr/search/StationArrivalViaList.do?stationId=219001119";
 
-        private static IWebDriver driver;
+        private static ChromeDriver driver;
         private static bool FirstLaunch = true;
 
         public static void CloseDriver()
@@ -53,7 +53,7 @@ namespace gajwa_businfo
 
         public static void UpdateBusInfoList(bool Do057only = false)
         {
-           
+
             List<string> busname = new List<string>(); //n번
             List<string> bustime = new List<string>(); //n분, 빈칸이면 차고지 or 정보없음
             List<string> busstatus = new List<string>(); //n번째 정류소 전 or 차고지대기 or 정보없음
@@ -61,25 +61,12 @@ namespace gajwa_businfo
             if (FirstLaunch) 
             {
 
-                ChromeOptions options = new ChromeOptions();
-
-                if (base_.RUNNING_ON_WINPE)
-                {
-                    options.BinaryLocation = base_.WINPE_BROWSER_BINARY_LOCATION;
-                }
-
-                ChromeDriverService service = ChromeDriverService.CreateDefaultService();
-                service.HideCommandPromptWindow = true;
-
-                options.AddArgument("headlessㅁ");
-
-                driver = new ChromeDriver(service, options);
-
+                driver = base_.GetChromeDriver();
                 FirstLaunch = false;
             }
 
             BusInfoList = new List<BusInfo>();
-            driver.Url = websiteURL;
+            base_.DriverNavigate(driver, websiteURL);
 
             Thread.Sleep(base_.BUSINFO_LOADING_WAIT_TIME);
 

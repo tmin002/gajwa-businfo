@@ -54,6 +54,7 @@ namespace gajwa_businfo
 
             ScheduleManager.ScheduleChanged += ScheduleChangedThread; //이벤트 핸들러
 
+
         }
         private void BusListPanel_Loaded(object sender, RoutedEventArgs e)
         {

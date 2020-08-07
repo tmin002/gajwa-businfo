@@ -11,7 +11,7 @@
         <!--Line X1="1020" Y1="30" X2="1020" Y2="100" Stroke="white" StrokeThickness="6"/-->
         <Label x:Name="BusTime_Copy" Content="가좌고등학교 버스정보안내서비스" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="60" RenderTransformOrigin="0.309,0.74" Height="88" FontFamily="Noto Sans Korean Medium" Width="860"/>
         <Image HorizontalAlignment="Left" Margin="18,26,0,32" Width="70" Source="/gajwa-businfo;component/Resources/baseline_info_white_48dp.png" RenderTransformOrigin="0.675,0.8"/>
-        <Label x:Name="BusTime_Copy1" Content="맑음, 24`C, 미세먼지 나쁨" HorizontalAlignment="Left" Margin="1368,19,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" RenderTransformOrigin="0.309,0.74" Height="75" FontFamily="Noto Sans Korean Regular" Width="542"/>
+        <Label x:Name="BusTime_Copy1" Content="맑음, 24`C, 미세먼지 나쁨" Visibility="Hidden" HorizontalAlignment="Left" Margin="1368,19,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" RenderTransformOrigin="0.309,0.74" Height="75" FontFamily="Noto Sans Korean Regular" Width="542"/>
 
     </Grid>
 </UserControl>
