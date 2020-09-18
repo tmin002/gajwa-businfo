@@ -60,6 +60,13 @@ namespace gajwa_businfo
         public static List<Schedule> SPECIAL_SCHEDULES = new List<Schedule>() { };
         public static ConfigContainer SCHEDULES_CONFIGCONTANER = new ConfigContainer();
         public static string SCHEDULES_FILE_LOCATION = PWD + "/schedule.txt";
+
+        //arduino ir control
+        public static char ARDUINO_SERIAL_PING_CHAR = 'c';
+        public static char ARDUINO_SERIAL_POWER_TOGGLE_CHAR = 'p';
+        public static string ARDUINO_SERIAL_COMPORT = "COM4";
+
+
         public static Schedule TODAY_SCHEDULE
         {
             get 
@@ -171,6 +178,9 @@ namespace gajwa_businfo
 
         public static void RebootComputer()
         {
+
+            if (d.NO_REBOOT) return;
+
             if (base_.RUNNING_ON_WINPE)
             {
                 Process.Start("wpeutil", "reboot");
@@ -178,6 +188,21 @@ namespace gajwa_businfo
             else
             {
                 Process.Start("shutdown", "-r -t 0");
+            }
+        }
+
+        public static void ShutdownComputer()
+        {
+
+            if (d.NO_REBOOT) return;
+
+            if (base_.RUNNING_ON_WINPE)
+            {
+                Process.Start("wpeutil", "shutdown");
+            }
+            else
+            {
+                Process.Start("shutdown", "-s -t 0");
             }
         }
 
@@ -206,6 +231,11 @@ namespace gajwa_businfo
                     return null;
             }
 
+        }
+
+        public static int ConvertArrayToTime(int[] arr) // {1,12} -> 72
+        {
+            return arr[0] * 60 + arr[1];
         }
 
         public static ChromeDriver GetChromeDriver()

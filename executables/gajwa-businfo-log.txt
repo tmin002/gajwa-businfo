@@ -178,3 +178,241 @@
 [2020-08-08 오전 12:00:00] Update057Text() Termination, BusThread_RunningState=4
 [2020-08-07 오후 7:47:07] gajwa-businfo launch
 [2020-08-07 오후 7:47:07] checking vital files
+[2020-09-04 오후 7:48:12] gajwa-businfo launch
+[2020-09-04 오후 7:48:12] checking vital files
+[2020-09-12 오전 10:16:23] gajwa-businfo launch
+[2020-09-12 오전 10:16:23] checking vital files
+[2020-09-12 오전 10:16:24] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:16:48] Schedule reset due to function test.
+[2020-09-12 오전 10:17:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:17:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-12 오전 10:18:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-09-12 오전 10:18:08] [ScheduleWatcher] Reboot raising
+[2020-09-12 오전 10:18:38] gajwa-businfo launch
+[2020-09-12 오전 10:18:38] checking vital files
+[2020-09-12 오전 10:18:39] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:21:57] gajwa-businfo launch
+[2020-09-12 오전 10:21:58] checking vital files
+[2020-09-12 오전 10:21:58] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:22:01] gajwa-businfo launch
+[2020-09-12 오전 10:22:01] checking vital files
+[2020-09-12 오전 10:22:02] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:22:12] Schedule reset due to function test.
+[2020-09-12 오전 10:23:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:23:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-12 오전 10:24:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-09-12 오전 10:24:05] [ScheduleWatcher] Reboot raising
+[2020-09-12 오전 10:26:00] [ScheduleWatcher] FoodScreenOff raising
+[2020-09-12 오전 10:26:00] [ScheduleWatcher] BusScreenOn raising
+[2020-09-12 오전 10:26:24] Schedule reset due to function test.
+[2020-09-12 오전 10:26:33] gajwa-businfo launch
+[2020-09-12 오전 10:26:33] checking vital files
+[2020-09-12 오전 10:26:34] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:29:17] gajwa-businfo launch
+[2020-09-12 오전 10:29:18] checking vital files
+[2020-09-12 오전 10:29:18] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:30:01] gajwa-businfo launch
+[2020-09-12 오전 10:30:01] checking vital files
+[2020-09-12 오전 10:30:02] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:30:12] gajwa-businfo launch
+[2020-09-12 오전 10:30:12] checking vital files
+[2020-09-12 오전 10:30:13] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:31:29] gajwa-businfo launch
+[2020-09-12 오전 10:31:29] checking vital files
+[2020-09-12 오전 10:31:30] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:32:34] gajwa-businfo launch
+[2020-09-12 오전 10:32:34] checking vital files
+[2020-09-12 오전 10:32:35] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:32:57] gajwa-businfo launch
+[2020-09-12 오전 10:32:57] checking vital files
+[2020-09-12 오전 10:32:58] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:33:21] gajwa-businfo launch
+[2020-09-12 오전 10:33:21] checking vital files
+[2020-09-12 오전 10:33:22] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:34:21] gajwa-businfo launch
+[2020-09-12 오전 10:34:21] checking vital files
+[2020-09-12 오전 10:34:22] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:35:05] gajwa-businfo launch
+[2020-09-12 오전 10:35:05] checking vital files
+[2020-09-12 오전 10:35:06] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:35:10] Schedule reset due to function test.
+[2020-09-12 오전 10:36:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오전 10:36:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-12 오전 10:37:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-09-12 오전 10:37:06] [ScheduleWatcher] Reboot raising
+[2020-09-12 오전 10:39:00] [ScheduleWatcher] FoodScreenOff raising
+[2020-09-12 오전 10:39:00] [ScheduleWatcher] BusScreenOn raising
+[2020-09-12 오전 10:40:00] [ScheduleWatcher] ScreenOff raising
+[2020-09-12 오전 10:40:00] [ScheduleWatcher] BusScreenOff raising
+[2020-09-12 오전 10:40:00] Update057Text() Termination, BusThread_RunningState=4
+[2020-09-12 오전 10:40:02] UpdateBusListPanels() Termination, BusThread_RunningState=5
+[2020-09-12 오후 9:23:36] gajwa-businfo launch
+[2020-09-12 오후 9:23:36] checking vital files
+[2020-09-12 오후 9:23:46] Schedule reset due to function test.
+[2020-09-12 오후 9:24:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-12 오후 9:24:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-12 오후 9:25:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-09-12 오후 9:25:09] [ScheduleWatcher] Reboot raising
+[2020-09-12 오후 9:27:00] [ScheduleWatcher] FoodScreenOff raising
+[2020-09-12 오후 9:27:00] [ScheduleWatcher] BusScreenOn raising
+[2020-09-12 오후 9:28:00] [ScheduleWatcher] ScreenOff raising
+[2020-09-12 오후 9:28:00] [ScheduleWatcher] BusScreenOff raising
+[2020-09-12 오후 9:28:00] UpdateBusListPanels() Termination, BusThread_RunningState=4
+[2020-09-12 오후 9:28:00] Update057Text() Termination, BusThread_RunningState=5
+[2020-09-12 오후 9:28:11] gajwa-businfo launch
+[2020-09-12 오후 9:28:11] checking vital files
+[2020-09-12 오후 9:28:44] gajwa-businfo launch
+[2020-09-12 오후 9:28:44] checking vital files
+[2020-09-18 오후 8:55:07] gajwa-businfo launch
+[2020-09-18 오후 8:55:07] checking vital files
+[2020-09-18 오후 8:55:22] arduino send
+[2020-09-18 오후 8:55:23] arduino send
+[2020-09-18 오후 8:55:23] arduino send
+[2020-09-18 오후 8:55:24] arduino send
+[2020-09-18 오후 8:55:24] arduino send
+[2020-09-18 오후 8:55:25] arduino send
+[2020-09-18 오후 8:55:25] arduino send
+[2020-09-18 오후 8:55:26] arduino send
+[2020-09-18 오후 8:55:26] arduino send
+[2020-09-18 오후 8:55:27] arduino send
+[2020-09-18 오후 8:55:27] arduino send
+[2020-09-18 오후 8:55:28] arduino send
+[2020-09-18 오후 8:55:28] arduino send
+[2020-09-18 오후 8:55:29] arduino send
+[2020-09-18 오후 8:55:29] arduino send
+[2020-09-18 오후 8:55:30] arduino send
+[2020-09-18 오후 8:55:30] arduino send
+[2020-09-18 오후 8:55:31] arduino send
+[2020-09-18 오후 8:55:31] arduino send
+[2020-09-18 오후 8:55:32] arduino send
+[2020-09-18 오후 8:55:32] arduino send
+[2020-09-18 오후 8:55:33] arduino send
+[2020-09-18 오후 8:55:33] arduino send
+[2020-09-18 오후 8:55:34] arduino send
+[2020-09-18 오후 8:55:34] arduino send
+[2020-09-18 오후 8:55:35] arduino send
+[2020-09-18 오후 8:55:35] arduino send
+[2020-09-18 오후 8:55:36] arduino send
+[2020-09-18 오후 8:55:36] arduino send
+[2020-09-18 오후 8:55:37] arduino send
+[2020-09-18 오후 8:55:37] arduino send
+[2020-09-18 오후 8:55:38] arduino send
+[2020-09-18 오후 8:55:39] arduino send
+[2020-09-18 오후 8:55:39] arduino send
+[2020-09-18 오후 8:55:40] arduino send
+[2020-09-18 오후 8:55:40] arduino send
+[2020-09-18 오후 8:55:41] arduino send
+[2020-09-18 오후 8:55:41] arduino send
+[2020-09-18 오후 8:55:42] arduino send
+[2020-09-18 오후 8:55:42] arduino send
+[2020-09-18 오후 8:55:43] arduino send
+[2020-09-18 오후 8:55:43] arduino send
+[2020-09-18 오후 8:55:44] arduino send
+[2020-09-18 오후 8:55:44] arduino send
+[2020-09-18 오후 8:55:45] arduino send
+[2020-09-18 오후 8:55:45] arduino send
+[2020-09-18 오후 8:55:46] arduino send
+[2020-09-18 오후 8:55:46] arduino send
+[2020-09-18 오후 8:55:47] arduino send
+[2020-09-18 오후 8:55:47] arduino send
+[2020-09-18 오후 8:55:48] arduino send
+[2020-09-18 오후 8:55:48] arduino send
+[2020-09-18 오후 8:55:49] arduino send
+[2020-09-18 오후 8:55:49] arduino send
+[2020-09-18 오후 8:55:50] arduino send
+[2020-09-18 오후 8:55:50] arduino send
+[2020-09-18 오후 8:55:51] arduino send
+[2020-09-18 오후 8:55:51] arduino send
+[2020-09-18 오후 8:56:34] gajwa-businfo launch
+[2020-09-18 오후 8:56:34] checking vital files
+[2020-09-18 오후 8:57:27] gajwa-businfo launch
+[2020-09-18 오후 8:57:27] checking vital files
+[2020-09-18 오후 9:03:22] gajwa-businfo launch
+[2020-09-18 오후 9:03:22] checking vital files
+[2020-09-18 오후 9:04:39] gajwa-businfo launch
+[2020-09-18 오후 9:04:39] checking vital files
+[2020-09-18 오후 9:05:49] gajwa-businfo launch
+[2020-09-18 오후 9:05:49] checking vital files
+[2020-09-18 오후 9:05:50] [ArduinoSerialControl] port open
+[2020-09-18 오후 9:05:57] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:05:59] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:01] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:01] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:01] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:01] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:02] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:02] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:02] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:02] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:02] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:02] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:03] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:03] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:04] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:04] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:04] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:05] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:05] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:05] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:06] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:06] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:06] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:07] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:07] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:08] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:08] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:09] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:09] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:14] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:14] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:15] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:15] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:15] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:16] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:17] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:06:31] gajwa-businfo launch
+[2020-09-18 오후 9:06:31] checking vital files
+[2020-09-18 오후 9:06:31] [ArduinoSerialControl] port open
+[2020-09-18 오후 9:06:39] Schedule reset due to function test.
+[2020-09-18 오후 9:07:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-18 오후 9:07:00] [ArduinoSerialControl] toggle signal sent
+[2020-09-18 오후 9:07:00] [ScheduleWatcher] ClockScreenOn raising

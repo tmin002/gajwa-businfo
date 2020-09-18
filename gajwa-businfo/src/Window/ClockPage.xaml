@@ -10,7 +10,7 @@
       Title="가좌고등학교 통합정보안내시스템" Height="1080" Width="1920">
 
     <Grid Background="#FF0F0F0F" Margin="0,0,0,0" x:Name="MainGrid" Cursor="None">
-        <Label x:Name="leftLabel" Content="00:00" HorizontalAlignment="Left" Margin="700,281,0,0" VerticalAlignment="Top" Foreground="White" FontSize="300" Height="404" FontFamily="Noto Sans Korean Bold" Width="817" FontWeight="Bold"/>
+        <Label x:Name="leftLabel" Content="00:00" HorizontalAlignment="Left" Margin="700,281,0,0" VerticalAlignment="Top" Foreground="White" FontSize="300" Height="404" FontFamily="Noto Sans Korean Bold" Width="1220" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="287" Margin="382,373,0,0" VerticalAlignment="Top" Width="294" Source="/gajwa-businfo;component/Resources/outline_notifications_none_white_48dp.png" RenderTransformOrigin="0.542,0.37"/>
         <local:ClockCampaignPanel HorizontalAlignment="Left" Height="130" Margin="0,950,0,0" VerticalAlignment="Top" Width="1920" x:Name="DatePanel"/>
 

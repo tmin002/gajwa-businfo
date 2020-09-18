@@ -72,6 +72,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="src\ArduinoSerialControl.cs" />
     <Compile Include="src\Settings\CommandManager.cs" />
     <Compile Include="src\Settings\CommandTemplate.cs" />
     <Compile Include="src\Window\SettingsWindow.xaml.cs">

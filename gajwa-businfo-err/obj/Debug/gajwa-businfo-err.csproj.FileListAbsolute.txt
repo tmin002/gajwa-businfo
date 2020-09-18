@@ -6,3 +6,12 @@ C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\executables\gajwa-bus
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa_businfo_err.ErrWindow.resources
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.exe
 C:\Users\team9\Desktop\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.pdb
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa_businfo_err.ErrWindow.resources
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa_businfo_err.Properties.Resources.resources
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.csproj.GenerateResource.Cache
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.exe
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.pdb
+D:\project\gajwa-businfo\gajwa-businfo\executables\gajwa-businfo-err.exe
+D:\project\gajwa-businfo\gajwa-businfo\executables\gajwa-businfo-err.pdb
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.csprojAssemblyReference.cache
+D:\project\gajwa-businfo\gajwa-businfo\gajwa-businfo-err\obj\Debug\gajwa-businfo-err.csproj.CoreCompileInputs.cache

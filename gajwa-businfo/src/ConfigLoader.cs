@@ -83,7 +83,7 @@ namespace gajwa_businfo
 
                 foreach(string j in i.GroupItems.Keys)
                 {
-                    File.AppendAllText(filename, $"{j}={i.FindItem(j)}\n");
+                    File.AppendAllText(filename, $"{j}={i.FindItem(j)}\n");// yo mama nigga sista
                 }
             }
         }

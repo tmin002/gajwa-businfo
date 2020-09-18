@@ -6,12 +6,23 @@
         xmlns:local="clr-namespace:gajwa_businfo"
         xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo" x:Class="gajwa_businfo.SettingsWindow"
         mc:Ignorable="d"
-        Title="가좌고등학교 버스정보안내시스템" Height="1080" Width="1920"
-        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Background="#FF0F0F0F" Topmost="False" Cursor="None">
-    <Grid HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="1080" Width="1920">
-        <RichTextBox HorizontalAlignment="Left" Height="1006" VerticalAlignment="Top" Width="1900" Margin="10,10,0,0" Background="#FF0F0F0F" FontFamily="Noto Sans Korean Regular" FontSize="48" x:Name="Box"/>
-        <TextBox HorizontalAlignment="Left" Height="47" Margin="10,1023,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1801" FontSize="24" FontFamily="Noto Sans Korean Medium" Background="#FF272727" Foreground="White"/>
-        <Button Content="Enter" HorizontalAlignment="Left" Margin="1816,1023,0,0" VerticalAlignment="Top" Width="94" Height="47"  Background="#FF272727" Foreground="White" FontFamily="Noto Sans Korean Regular" FontSize="24"/>
+        Title="Dev Tools" Height="294" Width="500"
+        WindowStyle="ToolWindow" ResizeMode="NoResize"  WindowStartupLocation="Manual" Background="#0000FF" Topmost="True" KeyDown="KeyPressed" Closed="TerminateThread">
+    <Grid HorizontalAlignment="Left" Margin="0,0,-6,0" VerticalAlignment="Top" Height="266" Width="500">
+        <Label Content="0: reboot" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20
+               " Height="35" Width="99" Margin="1,45,0,0"/>
+        <Label Content="1: shutdown" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="35" Width="147" Margin="1,80,0,0"/>
+        <Label Content="2: edit schedule" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="35" Width="180" Margin="1,115,0,0"/>
+        <Label Content="3: open cmd" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="35" Width="135" Margin="168,45,0,0"/>
+        <Label Content="4: function test" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="35" Width="157" Margin="168,80,0,0"/>
+        <Label Content="5: restart" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="35" Width="99" Margin="168,115,0,0"/>
+        <Label Content="active log" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Bold" Foreground="White" FontSize="24" Height="42" Width="128" Margin="-1,176,0,0"/>
+        <Label Content="6: send ir signal" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="47" Width="196" Margin="330,45,-26,0"/>
+        <Label x:Name="activelog" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="16" Height="35" Width="488" Margin="1,218,0,0"/>
+        <Label Content="ESC: exit" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="35" Width="99" Margin="330,115,0,0"/>
+        <Label x:Name="timelabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Bold" Foreground="White" FontSize="24" Height="42" Width="490" Margin="0,3,0,0"/>
+        <Label Content="7: ir check" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Noto Sans Korean Medium" Foreground="White" FontSize="20                " Height="47" Width="196" Margin="330,80,-26,0"/>
+
     </Grid>
 
 </Window>

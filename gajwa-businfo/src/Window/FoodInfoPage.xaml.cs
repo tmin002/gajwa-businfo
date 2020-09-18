@@ -81,40 +81,48 @@ namespace gajwa_businfo
         {
             while (!stopupdate)
             {
+                try {
 
-                if (File.Exists(base_.FOODINFO_TMP_FILE)) File.Delete(base_.FOODINFO_TMP_FILE);
+                    if (File.Exists(base_.FOODINFO_TMP_FILE)) File.Delete(base_.FOODINFO_TMP_FILE);
 
-                var driver2 = base_.GetChromeDriver();
-                base_.DriverNavigate(driver2, $"http://gajwa-h.hs.kr/_File/up_file/gajwa-h.hs.kr/meal/{DateTime.Now.ToString("yyyyMMdd")}_2.jpg");
-                var imgelement = driver2.FindElementsByTagName("img")[0];
-                var imgelementattr = imgelement.GetAttribute("src");
+                    var driver2 = base_.GetChromeDriver();
+                    base_.DriverNavigate(driver2, $"http://gajwa-h.hs.kr/_File/up_file/gajwa-h.hs.kr/meal/{DateTime.Now.ToString("yyyyMMdd")}_2.jpg");
+                    var imgelement = driver2.FindElementsByTagName("img")[0];
+                    var imgelementattr = imgelement.GetAttribute("src");
 
-                if (imgelementattr.Contains("error"))
-                {
-                    Thread.Sleep(1000);
-                    continue;
+                    if (imgelementattr.Contains("error"))
+                    {
+                        Thread.Sleep(1000);
+                        continue;
+                    }
+                    else
+                    {
+
+                        driver2.Manage().Window.Size = new System.Drawing.Size(959, 721);
+
+                        Screenshot ss = ((ITakesScreenshot)driver2).GetScreenshot();
+                        ss.SaveAsFile(base_.FOODINFO_TMP_FILE,
+                        ScreenshotImageFormat.Png);
+                    }
+
+
+                    this.Dispatcher.Invoke(new de(() =>
+                    {
+
+                        FoodImage.Background = new ImageBrush(new BitmapImage(new Uri(base_.FOODINFO_TMP_FILE)));
+
+                    }
+                    ));
+
+                    driver2.Quit();
+                    break; //여기까지 온거는 성공한거임.
+
                 }
-                else
+                catch (Exception ex)
                 {
-
-                    driver2.Manage().Window.Size = new System.Drawing.Size(959, 721);
-
-                    Screenshot ss = ((ITakesScreenshot)driver2).GetScreenshot();
-                    ss.SaveAsFile(base_.FOODINFO_TMP_FILE,
-                    ScreenshotImageFormat.Png);
+                    d.write($"FoodInfoPage: {ex.Message}");
+                    break;
                 }
-
-
-                this.Dispatcher.Invoke(new de(() =>
-                {
-
-                    FoodImage.Background = new ImageBrush(new BitmapImage(new Uri(base_.FOODINFO_TMP_FILE)));
-
-                }
-                ));
-
-                driver2.Quit();
-                break; //여기까지 온거는 성공한거임.
 
             }
             stopupdate = false;

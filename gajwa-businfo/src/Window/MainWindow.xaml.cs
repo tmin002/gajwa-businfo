@@ -14,6 +14,8 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
+using gajwa_businfo.src;
+
 namespace gajwa_businfo
 {
     /// <summary>
@@ -80,11 +82,11 @@ namespace gajwa_businfo
                 {
 
                     case ScheduleManager.ScheduleChangedEvents.ScreenOn:
-                        //todo: usb로 아두이노 조종 코드 넣기
+                        ArduinoSerialControl.ToggleTVpower();
                         break;
 
                     case ScheduleManager.ScheduleChangedEvents.ScreenOff:
-                        //todo: usb로 아두이노 조종 코드 넣기
+                        ArduinoSerialControl.ToggleTVpower();
                         break;
 
                     case ScheduleManager.ScheduleChangedEvents.ClockScreenOn:
@@ -125,9 +127,14 @@ namespace gajwa_businfo
         {
             if (base_.SETTINGS_WINDOW_KEY_ACTIVE_STATE)
             {
-                MessageBox.Show("settings 창은 아직 WIP 입니다");
-                Process.Start("cmd");
+                SettingsWindow sw = new SettingsWindow();
+                sw.ShowDialog();
             }
+        }
+
+        private void Terminate(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 

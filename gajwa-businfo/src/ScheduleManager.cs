@@ -31,6 +31,21 @@ namespace gajwa_businfo
 
         private static int LastScheduleLoadDate = -1; //처음엔 무조건 값을 다르게 해서 설정 초기화 유도
         private static Dictionary<ScheduleManager.ScheduleChangedEvents, int> LastScheduleKeys;
+        public static void ManuallyUpdateScheduleKeys(Schedule s)
+        {
+            LastScheduleKeys = new Dictionary<ScheduleChangedEvents, int>() //todo: 효율성 개선 필요.
+                    {
+                        {ScheduleManager.ScheduleChangedEvents.ScreenOn,  base_.ConvertArrayToTime(s.ScreenOnTime) },
+                        {ScheduleManager.ScheduleChangedEvents.ScreenOff, base_.ConvertArrayToTime(s.ScreenOffTime) },
+                        {ScheduleManager.ScheduleChangedEvents.ClockScreenOn, base_.ConvertArrayToTime(s.ClockScreenOnTime) },
+                        {ScheduleManager.ScheduleChangedEvents.ClockScreenOff, base_.ConvertArrayToTime(s.ClockScreenOffTime) },
+                        {ScheduleManager.ScheduleChangedEvents.FoodScreenOn, base_.ConvertArrayToTime(s.FoodScreenOnTime) },
+                        {ScheduleManager.ScheduleChangedEvents.FoodScreenOff, base_.ConvertArrayToTime(s.FoodScreenOffTime) },
+                        {ScheduleManager.ScheduleChangedEvents.BusScreenOn, base_.ConvertArrayToTime(s.BusScreenOnTime) },
+                        {ScheduleManager.ScheduleChangedEvents.BusScreenOff, base_.ConvertArrayToTime(s.BusScreenOffTime) },
+                        {ScheduleManager.ScheduleChangedEvents.Reboot, base_.ConvertArrayToTime(s.RebootTime) }
+                    };
+        }
         private static Dictionary<ScheduleManager.ScheduleChangedEvents, int> ScheduleKeys
         {
             get {
@@ -38,28 +53,13 @@ namespace gajwa_businfo
                 {
 
                     LastScheduleLoadDate = DateTime.Now.DayOfYear;
-                    LastScheduleKeys = new Dictionary<ScheduleChangedEvents, int>() //todo: 효율성 개선 필요.
-                    {
-                        {ScheduleManager.ScheduleChangedEvents.ScreenOn,  ConvertArrayToTime(base_.TODAY_SCHEDULE.ScreenOnTime) },
-                        {ScheduleManager.ScheduleChangedEvents.ScreenOff, ConvertArrayToTime(base_.TODAY_SCHEDULE.ScreenOffTime) },
-                        {ScheduleManager.ScheduleChangedEvents.ClockScreenOn, ConvertArrayToTime(base_.TODAY_SCHEDULE.ClockScreenOnTime) },
-                        {ScheduleManager.ScheduleChangedEvents.ClockScreenOff, ConvertArrayToTime(base_.TODAY_SCHEDULE.ClockScreenOffTime) },
-                        {ScheduleManager.ScheduleChangedEvents.FoodScreenOn, ConvertArrayToTime(base_.TODAY_SCHEDULE.FoodScreenOnTime) },
-                        {ScheduleManager.ScheduleChangedEvents.FoodScreenOff, ConvertArrayToTime(base_.TODAY_SCHEDULE.FoodScreenOffTime) },
-                        {ScheduleManager.ScheduleChangedEvents.BusScreenOn, ConvertArrayToTime(base_.TODAY_SCHEDULE.BusScreenOnTime) },
-                        {ScheduleManager.ScheduleChangedEvents.BusScreenOff, ConvertArrayToTime(base_.TODAY_SCHEDULE.BusScreenOffTime) },
-                        {ScheduleManager.ScheduleChangedEvents.Reboot, ConvertArrayToTime(base_.TODAY_SCHEDULE.RebootTime) }
-                    };
+                    ManuallyUpdateScheduleKeys(base_.TODAY_SCHEDULE);
                 }
 
                 return LastScheduleKeys;  
             }
-        }
 
-
-        private static int ConvertArrayToTime(int[] arr) // {1,12} -> 72
-        {
-            return arr[0] * 60 + arr[1];
+            set { LastScheduleKeys = value; }
         }
 
 

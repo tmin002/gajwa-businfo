@@ -7,6 +7,6 @@
         xmlns:src="clr-namespace:gajwa_businfo" xmlns:src1="clr-namespace:gajwa_businfo" x:Class="gajwa_businfo.MainWindow"
         mc:Ignorable="d"
         Title="가좌고등학교 버스정보안내시스템" Height="1080" Width="1920"
-        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Background="#FF0F0F0F" Topmost="False" Cursor="None" KeyDown="SettingsWindowLaunch">
+        WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="Manual" Background="#FF0F0F0F" Topmost="False" Cursor="None" KeyDown="SettingsWindowLaunch" Closed="Terminate">
 
 </Window>

@@ -78,6 +78,12 @@ namespace gajwa_businfo
                 Thread.Sleep(1000);
             }
 
+            ////
+            ////
+            ///
+
+            ArduinoSerialControl.OpenConnection(base_.ARDUINO_SERIAL_COMPORT);
+
 
         }
 
