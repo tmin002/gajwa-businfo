@@ -102,7 +102,8 @@ namespace gajwa_businfo
 
                         Screenshot ss = ((ITakesScreenshot)driver2).GetScreenshot();
                         ss.SaveAsFile(base_.FOODINFO_TMP_FILE,
-                        ScreenshotImageFormat.Png);
+                        ScreenshotImageFormat.Png); //이게 사용중이어서 foodinfopage 재실행시 그림 못받아옴. todo
+
                     }
 
 

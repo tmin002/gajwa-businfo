@@ -416,3 +416,43 @@
 [2020-09-18 오후 9:07:00] [ScheduleWatcher] ScreenOn raising
 [2020-09-18 오후 9:07:00] [ArduinoSerialControl] toggle signal sent
 [2020-09-18 오후 9:07:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-18 오후 11:32:50] gajwa-businfo launch
+[2020-09-18 오후 11:32:50] checking vital files
+[2020-09-18 오후 11:33:07] gajwa-businfo launch
+[2020-09-18 오후 11:33:07] checking vital files
+[2020-09-18 오후 11:33:25] gajwa-businfo launch
+[2020-09-18 오후 11:33:25] checking vital files
+[2020-09-18 오후 11:33:25] [ArduinoSerialControl] port open at COM4
+[2020-09-18 오후 11:33:43] Schedule reset due to function test.
+[2020-09-18 오후 11:34:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-18 오후 11:34:00] [ArduinoSerialControl] toggle signal sent to COM4
+[2020-09-18 오후 11:34:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-18 오후 11:34:11] Schedule reset due to function test.
+[2020-09-18 오후 11:35:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-18 오후 11:35:00] [ArduinoSerialControl] toggle signal sent to COM4
+[2020-09-18 오후 11:35:00] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-18 오후 11:36:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-09-18 오후 11:36:08] [ScheduleWatcher] Reboot raising
+[2020-09-18 오후 11:38:00] [ScheduleWatcher] FoodScreenOff raising
+[2020-09-18 오후 11:38:00] [ScheduleWatcher] BusScreenOn raising
+[2020-09-18 오후 11:39:00] [ScheduleWatcher] ScreenOff raising
+[2020-09-18 오후 11:39:00] [ArduinoSerialControl] toggle signal sent to COM4
+[2020-09-18 오후 11:39:00] [ScheduleWatcher] BusScreenOff raising
+[2020-09-18 오후 11:39:00] Update057Text() Termination, BusThread_RunningState=4
+[2020-09-18 오후 11:39:06] UpdateBusListPanels() Termination, BusThread_RunningState=5
+[2020-09-18 오후 11:39:07] Schedule reset due to function test.
+[2020-09-18 오후 11:40:00] [ScheduleWatcher] ScreenOn raising
+[2020-09-18 오후 11:40:01] [ArduinoSerialControl] toggle signal sent to COM4
+[2020-09-18 오후 11:40:01] [ScheduleWatcher] ClockScreenOn raising
+[2020-09-18 오후 11:41:00] [ScheduleWatcher] FoodScreenOn raising
+[2020-09-18 오후 11:41:04] [ScheduleWatcher] Reboot raising
+[2020-09-18 오후 11:41:04] FoodInfoPage: 'D:\project\gajwa-businfo\gajwa-businfo\executables\foodinfo_tmp_file' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+[2020-09-18 오후 11:43:00] [ScheduleWatcher] FoodScreenOff raising
+[2020-09-18 오후 11:43:00] [ScheduleWatcher] BusScreenOn raising
+[2020-09-18 오후 11:44:00] [ScheduleWatcher] ScreenOff raising
+[2020-09-18 오후 11:44:00] [ArduinoSerialControl] toggle signal sent to COM4
+[2020-09-18 오후 11:44:00] [ScheduleWatcher] BusScreenOff raising
+[2020-09-18 오후 11:44:01] Update057Text() Termination, BusThread_RunningState=4
+[2020-09-18 오후 11:44:05] UpdateBusListPanels() Termination, BusThread_RunningState=5
+[2020-09-18 오후 11:44:09] gajwa-businfo launch
+[2020-09-18 오후 11:44:09] checking vital files

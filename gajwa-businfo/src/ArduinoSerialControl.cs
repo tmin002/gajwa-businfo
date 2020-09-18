@@ -16,8 +16,8 @@ namespace gajwa_businfo
 
         public static void OpenConnection(string ComPort_)
         {
-            arduinoPort.PortName = ComPort;    //아두이노가 연결된 시리얼 포트 번호 지정
-            arduinoPort.BaudRate = 9600;       //시리얼 통신 속도 지정
+            arduinoPort.PortName = ComPort_;    
+            arduinoPort.BaudRate = 9600;       
             arduinoPort.Open();
 
             ComPort = ComPort_;
@@ -25,7 +25,11 @@ namespace gajwa_businfo
             d.write($"[ArduinoSerialControl] port open at {ComPort}");
         }
 
-        public static void CloseConnection() => arduinoPort.Close();
+        public static void CloseConnection()
+        {
+            d.write($"[ArduinoSerialControl] connection with {ComPort} closed");
+            arduinoPort.Close();
+        }
 
 
         public static void ToggleTVpower()
